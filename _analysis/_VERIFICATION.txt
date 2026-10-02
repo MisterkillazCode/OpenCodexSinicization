@@ -1,0 +1,434 @@
+
+==============================================================================
+APPLICATION CODE (the tool's own source)
+==============================================================================
+modules                       : 9
+modules w/ missing code literals: 3
+modules that do not compile   : 1
+modules w/ dropped docstrings : 3  (pycdc omits docstrings)
+
+-- missing CODE literals (real decompiler defects) --
+  main
+      'Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings'
+      'Local\\CodexChineseProxy'
+      '汉化成功，请重启Codex生效\n\n代理连接测试已通过；实际中文界面请重启后确认。\n请保持本工具运行。'
+  pyimod01_archive
+      "\nReader for PyInstaller's PYZ (ZlibArchive) archive. The archive is used to store collected byte-compiled Python\nmodu..."
+  pyimod02_importers
+      "\nPyInstaller's frozen path entry finder for specific search path.\n\nPer-path instances allow us to properly translate ..."
+      "\nPyInstaller's frozen loader for modules in the PYZ archive, which are discovered by PyiFrozenFinder.\n\nSince this loa..."
+      '\nA special loader that enables retrieval of the code-object for the __main__ module.\n'
+
+-- modules that fail to compile --
+  pyimod02_importers                         line 252: invalid syntax
+
+==============================================================================
+BUNDLED PYTHON 3.14 STANDARD LIBRARY (reference)
+==============================================================================
+modules                       : 142
+modules w/ missing code literals: 88
+modules that do not compile   : 5
+modules w/ dropped docstrings : 111  (pycdc omits docstrings)
+
+-- missing CODE literals (real decompiler defects) --
+  PYZ/_ast_unparse
+      'Methods in this class recursively traverse an AST and\noutput source code for the abstract syntax; original formatting...'
+  PYZ/_colorize
+      '\x1b[0m'
+      '\x1b[30m'
+      '\x1b[34m'
+      '\x1b[36m'
+      '\x1b[32m'
+  PYZ/_py_abc
+      'Metaclass for defining Abstract Base Classes (ABCs).\n\nUse this metaclass to create an ABC.  An ABC can be subclassed\n...'
+  PYZ/_py_warnings
+      '  %s\n'
+      'Object allocated at (most recent call last):\n'
+      '    %s\n'
+      ': Enable tracemalloc to get the object allocation traceback\n'
+      ') in warnings.filters:\n '
+  PYZ/_pydatetime
+      'Represent the difference between two datetime objects.\n\nSupported operators:\n\n- add, subtract timedelta\n- unary plus,...'
+      'Concrete date type.\n\nConstructors:\n\n__new__()\nfromtimestamp()\ntoday()\nfromordinal()\nstrptime()\n\nOperators:\n\n__repr__,...'
+      'Abstract base class for time zone info classes.\n\nSubclasses must override the tzname(), utcoffset() and dst() methods.\n'
+      'Time with time zone.\n\nConstructors:\n\n__new__()\nstrptime()\n\nOperators:\n\n__repr__, __str__\n__eq__, __le__, __lt__, __ge...'
+      'datetime(year, month, day[, hour[, minute[, second[, microsecond[,tzinfo]]]]])\n\nThe year, month and day arguments are...'
+  PYZ/_pydecimal
+      '        # A numeric string consists of:\n#    \\s*\n    (?P<sign>[-+])?              # an optional sign, followed by eit...'
+      '\\A\n(?:\n   (?P<fill>.)?\n   (?P<align>[<>=^])\n)?\n(?P<sign>[-+ ])?\n(?P<no_neg_0>z)?\n(?P<alt>\\#)?\n(?P<zeropad>0)?\n(?P<min...'
+      'Exponent of a 0 changed to fit bounds.\n\nThis occurs and signals clamped if the exponent of a result has been\naltered ...'
+      'An invalid operation was performed.\n\nVarious bad things cause this:\n\nSomething creates a signaling NaN\n-INF + INF\n0 *...'
+      'Trying to convert badly formed string.\n\nThis occurs and signals invalid-operation if a string is being\nconverted to a...'
+  PYZ/_strptime
+      '(?P<d>3[0-1]|[1-2]\\d|0[1-9]|[1-9]| [1-9])'
+      '(?P<H>2[0-3]|[0-1]\\d|\\d| \\d)'
+      '(?P<G>\\d\\d\\d\\d)'
+      '(?P<j>36[0-6]|3[0-5]\\d|[1-2]\\d\\d|0[1-9]\\d|00[1-9]|[1-9]\\d|0[1-9]|[1-9])'
+      '(?P<M>[0-5]\\d|\\d)'
+  PYZ/argparse
+      'Formatter for generating usage messages and argument help strings.\n\nOnly the name of this class is considered a publi...'
+      '\\n\\n\\n+'
+      '%*s%s\n'
+      'Help message formatter which retains any formatting in descriptions.\n\nOnly the name of this class is considered a pub...'
+      'Help message formatter which retains formatting of all help text.\n\nOnly the name of this class is considered a public...'
+  PYZ/ast
+      '(.*?(?:\\r\\n|\\n|\\r|$))'
+      '\nA node visitor base class that walks the abstract syntax tree and calls a\nvisitor function for every node found.  Th...'
+  PYZ/base64
+      '\nEncode the bytes-like objects using {encoding} and return a bytes object.\n'
+      '\nDecode the {encoding} encoded bytes-like object or ASCII string s.\n\nOptional casefold is a flag specifying whether a...'
+      '\nRFC 3548 allows for optional mapping of the digit 0 (zero) to the\nletter O (oh), and for optional mapping of the dig...'
+      ' [-h|-d|-e|-u] [file|-]\n        -h: print this help message and exit\n        -d, -u: decode\n        -e: encode (defau...'
+  PYZ/bz2
+      'A file object providing transparent bzip2 (de)compression.\n\nA BZ2File can act as a wrapper for an existing file objec...'
+  PYZ/calendar
+      "\nBase calendar class. This class doesn't do any formatting. It simply\nprovides data to subclasses.\n"
+      '\nSubclass of Calendar that outputs a calendar as a simple plain text\nsimilar to the UNIX program cal.\n'
+      '\nThis calendar returns complete HTML pages.\n'
+      '<?xml version="1.0" encoding="%s"?>\n'
+      '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">\n'
+  PYZ/codeop
+      'Instances of this class behave much like the built-in compile\nfunction, but if one is used to compile text containing...'
+      'Instances of this class have __call__ methods identical in\nsignature to compile_command; the difference is that if th...'
+  PYZ/compression.zstd
+      'Compression strategies, listed from fastest to strongest.\n\nNote that new strategies might be added in the future.\nOnl...'
+  PYZ/compression.zstd._zstdfile
+      'A file-like object providing transparent Zstandard (de)compression.\n\nA ZstdFile can act as a wrapper for an existing ...'
+  PYZ/csv
+      'Describe a CSV dialect.\n\nThis must be subclassed (see csv.excel).  Valid attributes are:\ndelimiter, quotechar, escape...'
+      '\n"Sniffs" the format of a CSV file (i.e. delimiter, quotechar)\nReturns a Dialect object.\n'
+      '((%(delim)s)|^)\\W*%(quote)s[^%(delim)s\\n]*%(quote)s[^%(delim)s\\n]*%(quote)s\\W*((%(delim)s)|$)'
+  PYZ/ctypes
+      'An instance of this class represents a loaded dll/shared\nlibrary, exporting functions using the standard C calling\nco...'
+      'This class represents the Python library itself.  It allows\naccessing Python API functions.  The GIL is not released,...'
+      'This class represents a dll exporting functions using the\nWindows stdcall calling convention.\n'
+      'This class represents a dll exporting functions using the\nWindows stdcall calling convention, and returning HRESULT.\n...'
+  PYZ/dataclasses
+      '^(?:\\s*(\\w+)\\s*\\.)?\\s*(\\w+)'
+      '\n return '
+  PYZ/difflib
+      '\n<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"\n          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-tra...'
+      '\n        :root {color-scheme: light dark}\n        table.diff {font-family: Menlo, Consolas, Monaco, Liberation Mono, ...'
+      '\n    <table class="diff" id="difflib_chg_%(prefix)s_top"\n           cellspacing="0" cellpadding="0" rules="groups" >\n...'
+      '\n    <table class="diff" summary="Legends">\n        <tr> <th colspan="2"> Legends </th> </tr>\n        <tr> <td> <tabl...'
+      '\nDiffer is a class for comparing sequences of lines of text, and\nproducing human-readable differences or deltas.  Dif...'
+  PYZ/dis
+      'The bytecode operations of a piece of code\n\nInstantiate this with a function, method, other compiled object, string o...'
+  PYZ/email._header_value_parser
+      '()<>@,:;.\\"[]'
+      '\n   =\\?            # literal =?\n   [^?]*          # charset\n   \\?             # literal ?\n   [qQbB]         # literal...'
+      '[\\x00-\\x20\\x7F]'
+      'expected \'"\' but found \'{}\''
+      "'\\' character outside of quoted-string/ccontent"
+  PYZ/email._parseaddr
+      'Address parser class by Ben Escoto.\n\nTo understand what this class does, it helps to have a copy of RFC 2822 in\nfront...'
+  PYZ/email._policybase
+      'Controls for how messages are interpreted and formatted.\n\nMost of the classes and many of the methods in the email pa...'
+      '+\nThis particular policy is the backward compatibility Policy.  It\nreplicates the behavior of the email package versi...'
+      ' \t\r\n'
+  PYZ/email.contentmanager
+      'latin-1'
+      'Unknown content transfer encoding {}'
+  PYZ/email.feedparser
+      '\\r\\n|\\r|\\n'
+      '(\\r\\n|\\r|\\n)'
+      '(\\r\\n|\\r|\\n)\\z'
+      '^(From |[\\041-\\071\\073-\\176]*:|[\\t ])'
+      '(?P<end>--)?(?P<ws>[ \\t]*)(?P<linesep>\\r\\n|\\r|\\n)?$'
+  PYZ/email.generator
+      '\\r\\n|\\r|\\n'
+      '\\r\\n[^ \\t]|\\r[^ \\n\\t]|\\n[^ \\t]'
+      'Generates output from a Message object tree.\n\nThis basic generator writes the message to the given file object as pla...'
+      'Generates a bytes version of a Message object tree.\n\nFunctionally identical to the base Generator except that the out...'
+      'Generates a text representation of a message.\n\nLike the Generator base class, except that non-text parts are substitu...'
+  PYZ/email.header
+      '\n  =\\?                   # literal =?\n  (?P<charset>[^?]*?)   # non-greedy up to the next ? is the charset\n  \\?      ...'
+      '[\\041-\\176]+:$'
+      '\\n[^ \\t]+:'
+  PYZ/email.headerregistry
+      'Base class for message headers.\n\nImplements generic behavior and provides tools for subclasses.\n\nA subclass must defi...'
+      'Header whose value consists of a single timestamp.\n\nProvides an additional attribute, datetime, which is either an aw...'
+  PYZ/email.message
+      '[ \\(\\)<>@,;:\\\\"/\\[\\]\\?=]'
+      'Basic message object.\n\nA message object is defined as something that has a bunch of RFC 5322\nheaders and a payload.  ...'
+  PYZ/email.policy
+      '\\n|\\r\\n?'
+      ' \t\r\n'
+  PYZ/email.utils
+      '[][\\\\()<>@,:;".]'
+      '[\\\\"]'
+      '^(?P<name>\\w+)\\*((?P<num>[0-9]+)\\*?)?$'
+  PYZ/fnmatch
+      ')\\z'
+  PYZ/fractions
+      '\n    \\A\\s*                                  # optional whitespace at the start,\n    (?P<sign>[-+]?)                  ...'
+      '\n    (?:\n        (?P<fill>.)?\n        (?P<align>[<>=^])\n    )?\n    (?P<sign>[-+ ]?)\n    # Alt flag forces a slash and...'
+      '\n    (?:\n        (?P<fill>.)?\n        (?P<align>[<>=^])\n    )?\n    (?P<sign>[-+ ]?)\n    (?P<no_neg_zero>z)?\n    (?P<a...'
+  PYZ/ftplib
+      'A FTP subclass which adds TLS support to FTP as described\nin RFC-4217.\n\nConnect as usual to port 21 implicitly securi...'
+      '150 .* \\((\\d+) bytes\\)'
+      '(\\d+),(\\d+),(\\d+),(\\d+),(\\d+),(\\d+)'
+  PYZ/gettext
+      '\n                (?P<WHITESPACES>[ \\t]+)                    | # spaces and horizontal tabs\n                (?P<NUMBER...'
+      'if True:\n            def func(n):\n                if not isinstance(n, int):\n                    n = _as_int(n)\n     ...'
+      '%s\x04%s'
+  PYZ/glob
+      '[\\1]'
+      '(?!\\.)'
+      ')\\z'
+  PYZ/gzip
+      "Minimal read-only file object that prepends a string to the contents\nof an actual file. Shouldn't be used outside of ..."
+      'The GzipFile class simulates most of the methods of a file object with\nthe exception of the truncate() method.\n\nThis ...'
+  PYZ/http.client
+      '[\x00- \x7f]'
+      '[\x00-\x1f]'
+      "nonnumeric port: '%s'"
+  PYZ/http.cookiejar
+      '# Netscape HTTP Cookie File\n# http://curl.haxx.se/rfc/cookie_spec.html\n# This is a generated file!  Do not edit.\n\n'
+      '^([-+])?(\\d\\d?):?(\\d\\d)?$'
+      '^[SMTWF][a-z][a-z], (\\d\\d) ([JFMASOND][a-z][a-z]) (\\d\\d\\d\\d) (\\d\\d):(\\d\\d):(\\d\\d) GMT$'
+      '^(?:Sun|Mon|Tue|Wed|Thu|Fri|Sat)[a-z]*,?\\s*'
+      '^\n    (\\d\\d?)            # day\n       (?:\\s+|[-\\/])\n    (\\w+)              # month\n        (?:\\s+|[-\\/])\n    (\\d+)   ...'
+  PYZ/importlib._bootstrap
+      'A recursive lock implementation which is able to detect deadlocks\n(e.g. thread 1 trying to take locks A then B, and t...'
+      'A simple _ModuleLock equivalent for Python builds without\nmulti-threading support.'
+      "The specification for a module, used for loading.\n\nA module's spec is the source for information about the module.  F..."
+      'Meta path import for built-in modules.\n\nAll methods are either class or static methods to avoid the need to\ninstantia...'
+      'Meta path import for frozen modules.\n\nAll methods are either class or static methods to avoid the need to\ninstantiate...'
+  PYZ/importlib._bootstrap_external
+      'Software\\Python\\PythonCore\\{sys_version}\\Modules\\{fullname}'
+      'Software\\Python\\PythonCore\\{sys_version}\\Modules\\{fullname}\\Debug'
+      'Base class of common code needed by both SourceLoader and\nSourcelessFileLoader.'
+      'code object from {}'
+      'Base file loader class which implements the loader protocol methods that\nrequire file system usage.'
+  PYZ/importlib.abc
+      'Abstract base class for loaders which can return data from their\nback-end storage to facilitate reading data to perfo...'
+      'Abstract base class for loaders which support inspection about the\nmodules they can load.\n\nThis ABC represents one of...'
+      'Abstract base class for loaders that wish to support the execution of\nmodules as scripts.\n\nThis ABC represents one of...'
+      'Abstract base class partially implementing the ResourceLoader and\nExecutionLoader ABCs.'
+  PYZ/importlib.metadata
+      '\nA simple entry point config parser for performance\n\n>>> for item in Sectioned.read(Sectioned._sample):\n...     print...'
+      '\n        [sec1]\n        # comments ignored\n        a = 1\n        b = 2\n\n        [sec2]\n        a = 2\n        '
+      'An entry point as defined by Python packaging conventions.\n\nSee `the packaging docs on entry points\n<https://packagin...'
+      '(?P<module>[\\w.]+)\\s*(:\\s*(?P<attr>[\\w.]+)\\s*)?((?P<extras>\\[.*\\])\\s*)?$'
+      '\nAn immutable collection of selectable EntryPoint objects.\n'
+  PYZ/importlib.metadata._collections
+      '\nOften it is desirable to prevent the mutation of\na default dict after its initial construction, such\nas to prevent m...'
+  PYZ/importlib.metadata._meta
+      'return'
+      'return'
+      'return'
+      'return'
+      'return'
+  PYZ/importlib.metadata._text
+      '\nA case insensitive string class; behaves just like str\nexcept compares equal when the only variation is case.\n\n>>> s...'
+  PYZ/importlib.resources._adapters
+      '\nAdapt a package spec to adapt the underlying loader.\n'
+      '\nAdapt a loader to provide TraversableResources.\n'
+      '\nAdapter for an existing or non-existent resource reader\nto provide a compatibility .files().\n'
+      '\nPath tied to a module spec.\nCan be read and exposes the resource reader children.\n'
+      "\nPath tied to a resource reader child.\nCan be read but doesn't expose any meaningful children.\n"
+  PYZ/importlib.resources.abc
+      '\nAn object with a subset of pathlib.Path methods suitable for\ntraversing directories and opening files.\n\nAny exceptio...'
+      '\nThe required interface for providing traversable\nresources.\n'
+  PYZ/importlib.resources.readers
+      '\nGiven a series of Traversable objects, implement a merged\nversion of the interface across all objects. Useful for\nna...'
+  PYZ/importlib.util
+      'A context manager that can temporarily skip the compatibility check.\n\nNOTE: This function is meant to accommodate an ...'
+  PYZ/inspect
+      '[\\w\\.]+'
+      'missing a required positional-only argument: '
+      'missing a required{argtype} argument: {arg!r}'
+      '(\n    {}\n)'
+  PYZ/ipaddress
+      'A generic IP object.\n\nThis IP class contains the version independent methods which are\nused by single IP addresses.\n'
+      'A generic IP network object.\n\nThis IP class contains the version independent methods which are\nused by networks.\n'
+      'Base IPv4 object.\n\nThe following methods are used by IPv4 objects in both single IP\naddresses and networks.\n\n'
+      'Base IPv6 object.\n\nThe following methods are used by IPv6 objects in both single IP\naddresses and networks.\n\n'
+  PYZ/json.decoder
+      '(.*?)(["\\\\\\x00-\\x1f])'
+      '[ \\t\\n\\r]*'
+      ' \t\n\r'
+      'Subclass of ValueError with the following additional properties:\n\nmsg: The unformatted error message\ndoc: The JSON do...'
+      'Invalid \\uXXXX escape'
+  PYZ/json.encoder
+      '[\\x00-\\x1f\\\\"\\b\\f\\n\\r\\t]'
+      '([\\\\"]|[^\\ -~])'
+      '\\u{0:04x}\\u{1:04x}'
+      'Extensible JSON <https://json.org> encoder for Python data structures.\n\nSupports the following objects and types by d...'
+  PYZ/json.scanner
+      '(-?(?:0|[1-9][0-9]*))(\\.[0-9]+)?([eE][-+]?[0-9]+)?'
+  PYZ/logging
+      '\nA LogRecord instance represents an event being logged.\n\nLogRecord instances are created every time something is logg...'
+      '%\\(\\w+\\)[#0+ -]*(\\*|\\d+)?(\\.(\\*|\\d+))?[diouxefgcrsa%]'
+      '^(.?[<>=^])?[+ -]?#?0?(\\d+|{\\w+})?[,_]?(\\.(\\d+|{\\w+}))?[bcdefgnosx%]?$'
+      '^(\\d+|\\w+)(\\.\\w+|\\[[^]]+\\])*$'
+      '\nA formatter suitable for formatting a number of records.\n'
+  PYZ/lzma
+      'A file object providing transparent LZMA (de)compression.\n\nAn LZMAFile can act as a wrapper for an existing file obje...'
+  PYZ/mimetypes
+      'MIME-types datastore.\n\nThis datastore can handle information from mime.types-style files\nand supports basic determina...'
+  PYZ/netrc
+      '\n\t\r '
+      'locale'
+      '\n\tlogin '
+      '\taccount '
+      '\tpassword '
+  PYZ/numbers
+      'All numbers inherit from this class.\n\nIf you just want to check if an argument x is a number, without\ncaring what kin...'
+      'Complex defines the operations that work on the builtin complex type.\n\nIn short, those are: a conversion to complex, ...'
+      'To Complex, Real adds the operations that work on real numbers.\n\nIn short, those are: a conversion to float, trunc(),...'
+      'To Real, Rational adds numerator and denominator properties.\n\nThe numerator and denominator values should be in lowes...'
+      'Integral adds methods that work on integral numbers.\n\nIn short, these are conversion to int, pow with modulus, and th...'
+  PYZ/pathlib
+      "This object provides sequence-like access to the logical ancestors\nof a path.  Don't try to construct it yourself."
+      'Base class for manipulating paths without I/O.\n\nPurePath represents a filesystem path and offers operations which\ndon...'
+      'PurePath subclass for non-Windows systems.\n\nOn a POSIX system, instantiating a PurePath should return this object.\nHo...'
+      'PurePath subclass for Windows systems.\n\nOn a Windows system, instantiating a PurePath should return this object.\nHowe...'
+      'PurePath subclass that can make system calls.\n\nPath represents a filesystem path but unlike PurePath, also offers\nmet...'
+  PYZ/pathlib._os
+      " can't be opened with mode "
+      "Implementation of pathlib.types.PathInfo that provides status\ninformation for Windows paths. Don't try to construct i..."
+      "Implementation of pathlib.types.PathInfo that provides status\ninformation for POSIX paths. Don't try to construct it ..."
+      'Implementation of pathlib.types.PathInfo that provides status\ninformation by querying a wrapped os.DirEntry object. D...'
+  PYZ/pickle
+      'This exception is raised when an unpicklable object is passed to the\ndump() method.\n\n'
+      'This exception is raised when there is a problem unpickling an object,\nsuch as a security violation.\n\nNote that other...'
+  PYZ/pprint
+      'Helper function for key functions when sorting unorderable objects.\n\nThe wrapped-object will fallback to a Py2.x styl...'
+      '\\S*\\s*'
+      '],\n'
+  PYZ/queue
+      'Create a queue object with a given maximum size.\n\nIf maxsize is <= 0, the queue size is infinite.\n'
+      'Variant of Queue that retrieves open entries in priority order (lowest first).\n\nEntries are typically tuples of the f...'
+      'Simple, unbounded FIFO queue.\n\nThis pure Python implementation is not reentrant.\n'
+  PYZ/random
+      'Random number generator base class used by bound module functions.\n\nUsed to instantiate instances of Random to get ge...'
+      'The only supported seed types are:\nNone, int, float, str, bytes, and bytearray.'
+      'Underlying random() generator does not supply \nenough bits to choose from a population range this large.\nTo remove th...'
+      'avg %g, stddev %g, min %g, max %g\n'
+      'if no options given, output depends on the input\n    string or multiple: same as --choice\n    integer: same as --inte...'
+  PYZ/selectors
+      'SelectorKey(fileobj, fd, events, data)\n\n    Object used to associate a file object to its backing\n    file descriptor...'
+      'Optional opaque data associated to this file object.\nFor example, this could be used to store a per-client session ID.'
+      'Selector abstract base class.\n\nA selector supports registering file objects to be monitored for specific\nI/O events.\n...'
+  PYZ/shlex
+      ' \t\r\n'
+      '\'"\'"\''
+  PYZ/shutil
+      'Raised when trying to do a kind of operation (e.g. copying) which is\nnot supported on a special file (e.g. a named pi...'
+      'Raised when a registry operation with the archiving\nand unpacking registries fails'
+      'Raised as a signal to fallback on using raw read()/write()\nfile copy when fast-copy functions fail to do so.\n'
+  PYZ/socket
+      'socketpair([family[, type[, proto]]]) -> (socket object, socket object)\nCreate a pair of socket objects from the sock...'
+      'Raw I/O implementation for stream sockets.\n\nThis class supports the makefile() method on sockets.  It provides\nthe ra...'
+  PYZ/ssl
+      'Content types (record layer)\n\nSee RFC 8446, section B.1\n'
+      'Alert types for TLSContentType.ALERT messages\n\nSee RFC 8446, section B.2\n'
+      'Message types (handshake protocol)\n\nSee RFC 8446, section B.3\n'
+      'An SSLContext holds various SSL-related configuration options and\ndata, such as certificates and possibly a private k...'
+      'This class implements a subtype of socket.socket that wraps\nthe underlying OS socket in an SSL context when necessary...'
+  PYZ/string
+      ' \t\n\r\x0b\x0c'
+      '!"#$%&\'()*+,-./:;<=>?@[\\]^_`{|}~'
+      '(?:\n              (?P<escaped>'
+      ')  |   # Escape sequence of two delimiters\n              (?P<named>'
+      ')       |   # delimiter and a Python identifier\n              {(?P<braced>'
+  PYZ/subprocess
+      "Command '%s' returned non-zero exit status %d."
+  PYZ/sysconfig
+      '#define ([A-Z][A-Za-z0-9_]+) (.*)\n'
+      '/[*] #undef ([A-Z][A-Za-z0-9_]+) [*]/\n'
+      '[\\d.]+'
+      '\\$\\(([A-Za-z][A-Za-z0-9_]*)\\)'
+  PYZ/tarfile
+      'Low-level file object. Supports reading and writing.\nIt is used instead of a regular file object for streaming\naccess.\n'
+      'Class that serves as an adapter between TarFile and\na stream-like object.  The stream-like object only\nneeds to have ...'
+      "Small proxy class that enables transparent compression\ndetection for the Stream interface (mode 'r|*').\n"
+      'A thin wrapper around an existing file object that\nprovides a part of its data as an individual file\nobject.\n'
+      'Informational class which holds the details about an\narchive member given by a tar header block.\nTarInfo objects are ...'
+  PYZ/tempfile
+      'An instance of _RandomNameSequence generates an endless\nsequence of unpredictable strings which can safely be incorpo...'
+      '~\\AppData\\Local\\Temp'
+      '%SYSTEMROOT%\\Temp'
+      'c:\\temp'
+      'c:\\tmp'
+  PYZ/textwrap
+      '\t\n\x0b\x0c\r '
+      'Hello there.\n  This is indented.'
+      '[\\w!"\\\'&.,?]'
+      '[^\\d\\W]'
+      '\n        ( # any whitespace\n          %(ws)s+\n        | # em-dash between words\n          (?<=%(wp)s) -{2,} (?=\\w)\n  ...'
+  PYZ/threading
+      'This class implements reentrant lock objects.\n\nA reentrant lock must be released by the thread that acquired it. Once...'
+      'Class that implements a condition variable.\n\nA condition variable allows one or more threads to wait until they are\nn...'
+      'This class implements semaphore objects.\n\nSemaphores manage a counter representing the number of release() calls minu...'
+      "Implements a bounded semaphore.\n\nA bounded semaphore checks to make sure its current value doesn't exceed its\ninitial..."
+      'Class implementing event objects.\n\nEvents manage a flag that can be set to true with the set() method and reset\nto fa...'
+  PYZ/tkinter
+      '([\\\\{}])'
+      '([\\s])'
+      '(\\d+)\\.(\\d+)([ab.])(\\d+)'
+      'Class to define value holders for e.g. buttons.\n\nSubclasses StringVar, IntVar, DoubleVar, BooleanVar are specializati...'
+      'Internal class.\n\nBase class which defines methods common for interior widgets.'
+  PYZ/tokenize
+      '[ \\f\\t]*'
+      '#[^\\r\\n]*'
+      '\\\\\\r?\\n'
+      '[0-9](?:_?[0-9])*\\.(?:[0-9](?:_?[0-9])*)?'
+      "[^'\\\\]*(?:\\\\.[^'\\\\]*)*'"
+  PYZ/tracemalloc
+      '\nStatistic difference on memory allocations between two Snapshot instance.\n'
+      '\nStatistic difference on memory allocations between an old and a new\nSnapshot instance.\n'
+      '\nFrame of a traceback.\n'
+      '\nSequence of Frame instances sorted from the oldest frame\nto the most recent frame.\n'
+      '\nTrace of a memory block.\n'
+  PYZ/typing
+      'Deprecated alias to collections.abc.Callable.\n\n    Callable[[int], str] signifies a function that takes a single\n    ...'
+      'Deprecated alias to builtins.tuple.\n\n    Tuple[X, Y] is the cross-product type of X and Y.\n\n    Example: Tuple[T1, T2...'
+      'Deprecated alias to builtins.type.\n\n    builtins.type or typing.Type can be used to annotate class objects.\n    For e...'
+      'Special type indicating an unconstrained type.\n\n- Any is compatible with every type.\n- Any assumed to have all method...'
+      "The central part of the internal API.\n\nThis represents a generic version of type 'origin' with type arguments 'params..."
+  PYZ/urllib.parse
+      '\x00\x01\x02\x03\x04\x05\x06\x07\x08\t\n\x0b\x0c\r\x0e\x0f\x10\x11\x12\x13\x14\x15\x16\x17\x18\x19\x1a\x1b\x1c\x1d\x1e\x1f '
+      '\nDefragResult(url, fragment)\n\nA 2-tuple that contains the url without fragment identifier and the fragment\nidentifier...'
+      '\nFragment identifier separated from URL, that allows indirect identification of a\nsecondary resource by reference to ...'
+      '\nSplitResult(scheme, netloc, path, query, fragment)\n\nA 5-tuple that contains the different components of a URL. Simil...'
+      '\nNetwork location where the request is made to.\n'
+  PYZ/urllib.request
+      ':\\d+$'
+      'The HTTP server returned a redirect error that would lead to an infinite loop.\nThe last 30x error message was:\n'
+      '(?:^|,)[ \t]*([^ \t,]+)[ \t]+realm=(["\']?)([^"\']*)\\2'
+      'An authentication protocol defined by RFC 2069\n\nDigest authentication improves on basic authentication because it\ndoe...'
+      'Content-type: %s\nContent-length: %d\nLast-modified: %s\n'
+  PYZ/webbrowser
+      'Class for all browsers started with a command\nand without remote functionality.'
+      'Class for all browsers which are to be started in the\nbackground.'
+      'Controller for the KDE File Manager (kfm, or Konqueror).\n\nSee the output of ``kfmclient --commands``\nfor more informa...'
+      '--silent'
+      'C:\\Program Files (x86)'
+  PYZ/zipfile
+      '\nRaised when writing a zipfile, the zipfile requires ZIP64 extensions\nand those extensions are disabled.\n'
+      'File-like object for reading an archive member.\nIs returned by ZipFile.open().\n'
+      "Mode must be 'r', 'w', 'x', or 'a'"
+  PYZ/zipfile._path
+      '\nMix-in to save the initialization state for pickling.\n'
+      '\nA ZipFile subclass that ensures that implied directories\nare always included in the namelist.\n\n>>> list(CompleteDirs...'
+      '\nZipFile subclass to ensure implicit\ndirs exist and are resolved rapidly.\n'
+  PYZ/zipfile._path.glob
+      "\n>>> Translator('xyz')\nTraceback (most recent call last):\n...\nAssertionError: Invalid separators\n\n>>> Translator('')\n..."
+      ')\\z'
+      '\\*\\*'
+      '([^\\[]+)|(?P<set>[\\[].*?[\\]])|([\\[][^\\]]*$)'
+
+-- modules that fail to compile --
+  PYZ/importlib._bootstrap                   line 784: invalid syntax
+  PYZ/importlib.metadata._itertools          line 19: parameter without a default follows parameter with a default
+  PYZ/pathlib                                line 1267: invalid syntax
+  PYZ/pathlib._os                            line 340: invalid syntax
+  PYZ/subprocess                             line 1260: invalid syntax
+
+Note: pycdc emits '# ERROR: Decompilation failed' style fallbacks
+for a few constructs; those are listed below and are the only
+places where the listing is a disassembly stub rather than code.
+

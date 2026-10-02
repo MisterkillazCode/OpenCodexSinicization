@@ -1,0 +1,18 @@
+# 二进制文件：禁止换行转换与合并
+*.exe   binary
+*.dll   binary
+*.ico   binary
+*.jpg   binary
+*.png   binary
+
+# 反汇编与校验文本按原样处理
+*.disasm.txt  text eol=lf
+*.flow.txt    text eol=lf
+*.py          text eol=lf
+*.md          text eol=lf
+
+# 让 GitHub 的语言统计不要把 stdlib 参考件算成"项目代码"
+stdlib_python314/** linguist-vendored
+assets/vendor/**    linguist-vendored
+_analysis/**        linguist-documentation
+*.md                linguist-documentation

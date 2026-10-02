@@ -1,0 +1,2538 @@
+=== CODE <module> (line 1) args=0 ===
+   0           RESUME                   0
+
+   1           LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              0 (ctypes)
+               STORE_NAME               0 (ctypes)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              1 (json)
+               STORE_NAME               1 (json)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              2 (os)
+               STORE_NAME               2 (os)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              3 (queue)
+               STORE_NAME               3 (queue)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              4 (socket)
+               STORE_NAME               4 (socket)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              5 (subprocess)
+               STORE_NAME               5 (subprocess)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              6 (sys)
+               STORE_NAME               6 (sys)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              7 (threading)
+               STORE_NAME               7 (threading)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              8 (time)
+               STORE_NAME               8 (time)
+               LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME              9 (webbrowser)
+               STORE_NAME               9 (webbrowser)
+
+   2           LOAD_SMALL_INT           0
+               LOAD_CONST               2 (('Path',))
+               IMPORT_NAME             10 (pathlib)
+               IMPORT_FROM             11 (Path)
+               STORE_NAME              11 (Path)
+               POP_TOP
+
+   3           LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME             12 (tkinter)
+               STORE_NAME              13 (tk)
+
+   4           LOAD_SMALL_INT           0
+               LOAD_CONST               3 (('messagebox',))
+               IMPORT_NAME             12 (tkinter)
+               IMPORT_FROM             14 (messagebox)
+               STORE_NAME              14 (messagebox)
+               POP_TOP
+
+   5           LOAD_SMALL_INT           0
+               LOAD_CONST               4 (('urlencode', 'urlparse', 'parse_qs'))
+               IMPORT_NAME             15 (urllib.parse)
+               IMPORT_FROM             16 (urlencode)
+               STORE_NAME              16 (urlencode)
+               IMPORT_FROM             17 (urlparse)
+               STORE_NAME              17 (urlparse)
+               IMPORT_FROM             18 (parse_qs)
+               STORE_NAME              18 (parse_qs)
+               POP_TOP
+
+   6           LOAD_SMALL_INT           0
+               LOAD_CONST               5 (('ProxyHandler', 'Request', 'build_opener'))
+               IMPORT_NAME             19 (urllib.request)
+               IMPORT_FROM             20 (ProxyHandler)
+               STORE_NAME              20 (ProxyHandler)
+               IMPORT_FROM             21 (Request)
+               STORE_NAME              21 (Request)
+               IMPORT_FROM             22 (build_opener)
+               STORE_NAME              22 (build_opener)
+               POP_TOP
+
+   7           LOAD_SMALL_INT           0
+               LOAD_CONST               1 (None)
+               IMPORT_NAME             23 (winreg)
+               STORE_NAME              23 (winreg)
+
+   9           LOAD_NAME               11 (Path)
+               PUSH_NULL
+               LOAD_NAME               24 (getattr)
+               PUSH_NULL
+               LOAD_NAME                6 (sys)
+               LOAD_CONST               6 ('_MEIPASS')
+               LOAD_NAME               11 (Path)
+               PUSH_NULL
+               LOAD_NAME               25 (__file__)
+               CALL                     1
+               LOAD_ATTR               53 (resolve + NULL|self)
+               CALL                     0
+               LOAD_ATTR               54 (parent)
+               CALL                     3
+               CALL                     1
+               STORE_NAME              28 (BUNDLE)
+
+  10           LOAD_NAME               11 (Path)
+               PUSH_NULL
+               LOAD_NAME                2 (os)
+               LOAD_ATTR               58 (environ)
+               LOAD_ATTR               61 (get + NULL|self)
+               LOAD_CONST               7 ('LOCALAPPDATA')
+               LOAD_NAME               31 (str)
+               PUSH_NULL
+               LOAD_NAME               11 (Path)
+               LOAD_ATTR               64 (home)
+               PUSH_NULL
+               CALL                     0
+               CALL                     1
+               CALL                     2
+               CALL                     1
+               LOAD_CONST               8 ('CodexChineseProxy')
+               BINARY_OP               11 (/)
+               STORE_NAME              33 (DATA)
+
+  11           LOAD_CONST               9 ('http://154.201.74.158:8765')
+               STORE_NAME              34 (SERVER_URL)
+
+  12           LOAD_CONST              10 ('Software\\Microsoft\\Windows\\CurrentVersion\\Internet Settings')
+               STORE_NAME              35 (REG_PATH)
+
+  13           LOAD_NAME               22 (build_opener)
+               PUSH_NULL
+               LOAD_NAME               20 (ProxyHandler)
+               PUSH_NULL
+               BUILD_MAP                0
+               CALL                     1
+               CALL                     1
+               STORE_NAME              36 (DIRECT)
+
+  15           LOAD_CONST              11 (<code object get_key_info at 0x00000000012F16B0, file "main.py", line 15>)
+               MAKE_FUNCTION
+               STORE_NAME              37 (get_key_info)
+
+  20           LOAD_CONST              12 (<code object verify_key at 0x0000000001486890, file "main.py", line 20>)
+               MAKE_FUNCTION
+               STORE_NAME              38 (verify_key)
+
+  23           LOAD_CONST              13 (<code object make_config at 0x000000000189D7F0, file "main.py", line 23>)
+               MAKE_FUNCTION
+               STORE_NAME              39 (make_config)
+
+  35           LOAD_CONST              14 (<code object notify_windows at 0x0000000001BD81C0, file "main.py", line 35>)
+               MAKE_FUNCTION
+               STORE_NAME              40 (notify_windows)
+
+  39           LOAD_BUILD_CLASS
+               PUSH_NULL
+               LOAD_CONST              15 (<code object Proxy at 0x0000000001474810, file "main.py", line 39>)
+               MAKE_FUNCTION
+               LOAD_CONST              16 ('Proxy')
+               CALL                     2
+               STORE_NAME              41 (Proxy)
+
+ 100           LOAD_BUILD_CLASS
+               PUSH_NULL
+               LOAD_CONST              17 (<code object App at 0x000000000131BEB0, file "main.py", line 100>)
+               MAKE_FUNCTION
+               LOAD_CONST              18 ('App')
+               CALL                     2
+               STORE_NAME              42 (App)
+
+ 197           LOAD_NAME               43 (__name__)
+               LOAD_CONST              19 ('__main__')
+               COMPARE_OP              88 (bool(==))
+               POP_JUMP_IF_FALSE      191 (to L3)
+               NOT_TAKEN
+
+ 198           LOAD_NAME                0 (ctypes)
+               LOAD_ATTR               88 (WinDLL)
+               PUSH_NULL
+               LOAD_CONST              20 ('kernel32')
+               LOAD_CONST              21 (True)
+               LOAD_CONST              22 (('use_last_error',))
+               CALL_KW                  2
+               STORE_NAME              45 (kernel)
+
+ 199           LOAD_NAME                0 (ctypes)
+               LOAD_ATTR               92 (c_void_p)
+               LOAD_NAME               45 (kernel)
+               LOAD_ATTR               94 (CreateMutexW)
+               STORE_ATTR              48 (restype)
+
+ 200           LOAD_NAME               45 (kernel)
+               LOAD_ATTR               95 (CreateMutexW + NULL|self)
+               LOAD_CONST               1 (None)
+               LOAD_CONST              23 (False)
+               LOAD_CONST              24 ('Local\\CodexChineseProxy')
+               CALL                     3
+               STORE_NAME              49 (mutex)
+
+ 201           LOAD_NAME                0 (ctypes)
+               LOAD_ATTR              100 (get_last_error)
+               PUSH_NULL
+               CALL                     0
+               LOAD_SMALL_INT         183
+               COMPARE_OP              72 (==)
+               STORE_NAME              51 (already_running)
+
+ 202           LOAD_NAME               13 (tk)
+               LOAD_ATTR              104 (Tk)
+               PUSH_NULL
+               CALL                     0
+               STORE_NAME              53 (root)
+
+ 203           LOAD_NAME               51 (already_running)
+               TO_BOOL
+               POP_JUMP_IF_FALSE       54 (to L1)
+               NOT_TAKEN
+
+ 204           LOAD_NAME               53 (root)
+               LOAD_ATTR              109 (withdraw + NULL|self)
+               CALL                     0
+               POP_TOP
+               LOAD_NAME               14 (messagebox)
+               LOAD_ATTR              110 (showinfo)
+               PUSH_NULL
+               LOAD_CONST              25 ('工具已运行')
+               LOAD_CONST              26 ('请使用已经打开的代理工具。')
+               CALL                     2
+               POP_TOP
+               LOAD_NAME               53 (root)
+               LOAD_ATTR              113 (destroy + NULL|self)
+               CALL                     0
+               POP_TOP
+               LOAD_CONST               1 (None)
+               RETURN_VALUE
+
+ 206   L1:     LOAD_NAME               42 (App)
+               PUSH_NULL
+               LOAD_NAME               53 (root)
+               CALL                     1
+               POP_TOP
+               LOAD_NAME               53 (root)
+               LOAD_ATTR              115 (mainloop + NULL|self)
+               CALL                     0
+               POP_TOP
+       L2:     LOAD_CONST               1 (None)
+               RETURN_VALUE
+
+ 197   L3:     LOAD_CONST               1 (None)
+               RETURN_VALUE
+
+  --   L4:     PUSH_EXC_INFO
+
+ 207           LOAD_NAME               58 (Exception)
+               CHECK_EXC_MATCH
+               POP_JUMP_IF_FALSE       37 (to L8)
+               NOT_TAKEN
+               STORE_NAME              59 (error)
+       L5:     LOAD_NAME               14 (messagebox)
+               LOAD_ATTR              120 (showerror)
+               PUSH_NULL
+               LOAD_CONST              27 ('工具启动失败')
+               LOAD_NAME               31 (str)
+               PUSH_NULL
+               LOAD_NAME               59 (error)
+               CALL                     1
+               CALL                     2
+               POP_TOP
+       L6:     POP_EXCEPT
+               LOAD_CONST               1 (None)
+               STORE_NAME              59 (error)
+               DELETE_NAME             59 (error)
+               LOAD_CONST               1 (None)
+               RETURN_VALUE
+
+  --   L7:     LOAD_CONST               1 (None)
+               STORE_NAME              59 (error)
+               DELETE_NAME             59 (error)
+               RERAISE                  1
+
+ 207   L8:     RERAISE                  0
+
+  --   L9:     COPY                     3
+               POP_EXCEPT
+               RERAISE                  1
+ExceptionTable:
+  L1 to L2 -> L4 [0]
+  L4 to L5 -> L9 [1] lasti
+  L5 to L6 -> L7 [1] lasti
+  L7 to L9 -> L9 [1] lasti
+
+    === CODE get_key_info (line 15) args=1 ===
+      15           RESUME                   0
+    
+      16           LOAD_GLOBAL              0 (SERVER_URL)
+                   LOAD_CONST               0 ('/check?')
+                   BINARY_OP                0 (+)
+                   LOAD_GLOBAL              3 (urlencode + NULL)
+                   LOAD_CONST               1 ('key')
+                   LOAD_FAST_BORROW         0 (key)
+                   LOAD_ATTR                5 (strip + NULL|self)
+                   CALL                     0
+                   BUILD_MAP                1
+                   CALL                     1
+                   BINARY_OP                0 (+)
+                   STORE_FAST               1 (url)
+    
+      17           LOAD_GLOBAL              6 (DIRECT)
+                   LOAD_ATTR                9 (open + NULL|self)
+                   LOAD_FAST_BORROW         1 (url)
+                   LOAD_SMALL_INT          10
+                   LOAD_CONST               2 (('timeout',))
+                   CALL_KW                  2
+                   COPY                     1
+                   LOAD_SPECIAL             1 (__exit__)
+                   SWAP                     2
+                   SWAP                     3
+                   LOAD_SPECIAL             0 (__enter__)
+                   CALL                     0
+           L1:     STORE_FAST               2 (response)
+    
+      18           LOAD_GLOBAL             10 (json)
+                   LOAD_ATTR               12 (load)
+                   PUSH_NULL
+                   LOAD_FAST_BORROW         2 (response)
+                   CALL                     1
+    
+      17   L2:     SWAP                     3
+                   SWAP                     2
+                   LOAD_CONST               3 (None)
+                   LOAD_CONST               3 (None)
+                   LOAD_CONST               3 (None)
+                   CALL                     3
+                   POP_TOP
+                   RETURN_VALUE
+           L3:     PUSH_EXC_INFO
+                   WITH_EXCEPT_START
+                   TO_BOOL
+                   POP_JUMP_IF_TRUE         2 (to L4)
+                   NOT_TAKEN
+                   RERAISE                  2
+           L4:     POP_TOP
+           L5:     POP_EXCEPT
+                   POP_TOP
+                   POP_TOP
+                   POP_TOP
+                   LOAD_CONST               3 (None)
+                   RETURN_VALUE
+    
+      --   L6:     COPY                     3
+                   POP_EXCEPT
+                   RERAISE                  1
+    ExceptionTable:
+      L1 to L2 -> L3 [2] lasti
+      L3 to L5 -> L6 [4] lasti
+
+    === CODE verify_key (line 20) args=1 ===
+     20           RESUME                   0
+    
+     21           LOAD_GLOBAL              1 (get_key_info + NULL)
+                  LOAD_FAST_BORROW         0 (key)
+                  CALL                     1
+                  LOAD_ATTR                3 (get + NULL|self)
+                  LOAD_CONST               0 ('ok')
+                  CALL                     1
+                  LOAD_CONST               1 (True)
+                  IS_OP                    0 (is)
+                  RETURN_VALUE
+
+    === CODE make_config (line 23) args=2 ===
+      --           MAKE_CELL                4 (q)
+    
+      23           RESUME                   0
+    
+      24           LOAD_GLOBAL              1 (urlparse + NULL)
+                   LOAD_FAST_BORROW         0 (link)
+                   LOAD_ATTR                3 (strip + NULL|self)
+                   CALL                     0
+                   CALL                     1
+                   STORE_FAST               2 (u)
+                   LOAD_GLOBAL              5 (parse_qs + NULL)
+                   LOAD_FAST_BORROW         2 (u)
+                   LOAD_ATTR                6 (query)
+                   CALL                     1
+                   STORE_DEREF              4 (q)
+    
+      25           LOAD_CONST              40 (('',))
+                   LOAD_FAST_BORROW         4 (q)
+                   BUILD_TUPLE              1
+                   LOAD_CONST               1 (<code object value at 0x00000000014869A0, file "main.py", line 25>)
+                   MAKE_FUNCTION
+                   SET_FUNCTION_ATTRIBUTE   8 (closure)
+                   SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                   STORE_FAST               3 (value)
+    
+      26           LOAD_FAST_BORROW         2 (u)
+                   LOAD_ATTR                8 (scheme)
+                   LOAD_CONST               2 ('vless')
+                   COMPARE_OP             119 (bool(!=))
+                   POP_JUMP_IF_TRUE        37 (to L1)
+                   NOT_TAKEN
+                   LOAD_FAST_BORROW         2 (u)
+                   LOAD_ATTR               10 (hostname)
+                   TO_BOOL
+                   POP_JUMP_IF_FALSE       19 (to L1)
+                   NOT_TAKEN
+                   LOAD_FAST_BORROW         2 (u)
+                   LOAD_ATTR               12 (username)
+                   TO_BOOL
+                   POP_JUMP_IF_TRUE        12 (to L2)
+                   NOT_TAKEN
+           L1:     LOAD_GLOBAL             15 (ValueError + NULL)
+                   LOAD_CONST               3 ('内置节点配置无效')
+                   CALL                     1
+                   RAISE_VARARGS            1
+    
+      27   L2:     LOAD_CONST               4 ('log')
+                   LOAD_CONST               5 ('loglevel')
+                   LOAD_CONST               6 ('warning')
+                   BUILD_MAP                1
+    
+      28           LOAD_CONST               7 ('inbounds')
+                   LOAD_CONST               8 ('listen')
+                   LOAD_CONST               9 ('127.0.0.1')
+                   LOAD_CONST              10 ('port')
+                   LOAD_FAST_BORROW         1 (port)
+                   LOAD_CONST              11 ('protocol')
+                   LOAD_CONST              12 ('http')
+                   BUILD_MAP                3
+                   BUILD_LIST               1
+    
+      29           LOAD_CONST              13 ('outbounds')
+                   LOAD_CONST              11 ('protocol')
+                   LOAD_CONST               2 ('vless')
+                   LOAD_CONST              14 ('settings')
+                   LOAD_CONST              15 ('vnext')
+                   LOAD_CONST              16 ('address')
+                   LOAD_FAST_BORROW         2 (u)
+                   LOAD_ATTR               10 (hostname)
+                   LOAD_CONST              10 ('port')
+                   LOAD_FAST_BORROW         2 (u)
+                   LOAD_ATTR               16 (port)
+                   COPY                     1
+                   TO_BOOL
+                   POP_JUMP_IF_TRUE         3 (to L3)
+                   NOT_TAKEN
+                   POP_TOP
+                   LOAD_CONST              17 (443)
+    
+      30   L3:     LOAD_CONST              18 ('users')
+                   LOAD_CONST              19 ('id')
+                   LOAD_FAST_BORROW         2 (u)
+                   LOAD_ATTR               12 (username)
+                   LOAD_CONST              20 ('encryption')
+                   LOAD_CONST              21 ('none')
+                   LOAD_CONST              22 ('flow')
+                   LOAD_FAST_BORROW         3 (value)
+                   PUSH_NULL
+                   LOAD_CONST              22 ('flow')
+                   CALL                     1
+                   BUILD_MAP                3
+                   BUILD_LIST               1
+    
+      29           BUILD_MAP                3
+                   BUILD_LIST               1
+                   BUILD_MAP                1
+    
+      31           LOAD_CONST              23 ('streamSettings')
+                   LOAD_CONST              24 ('network')
+                   LOAD_CONST              25 ('tcp')
+                   LOAD_CONST              26 ('security')
+                   LOAD_CONST              27 ('reality')
+                   LOAD_CONST              28 ('realitySettings')
+    
+      32           LOAD_CONST              29 ('serverName')
+                   LOAD_FAST_BORROW         3 (value)
+                   PUSH_NULL
+                   LOAD_CONST              30 ('sni')
+                   CALL                     1
+                   LOAD_CONST              31 ('fingerprint')
+                   LOAD_FAST_BORROW         3 (value)
+                   PUSH_NULL
+                   LOAD_CONST              32 ('fp')
+                   LOAD_CONST              33 ('chrome')
+                   CALL                     2
+    
+      33           LOAD_CONST              34 ('password')
+                   LOAD_FAST_BORROW         3 (value)
+                   PUSH_NULL
+                   LOAD_CONST              35 ('pbk')
+                   CALL                     1
+                   LOAD_CONST              36 ('shortId')
+                   LOAD_FAST_BORROW         3 (value)
+                   PUSH_NULL
+                   LOAD_CONST              37 ('sid')
+                   CALL                     1
+                   LOAD_CONST              38 ('spiderX')
+                   LOAD_FAST_BORROW         3 (value)
+                   PUSH_NULL
+                   LOAD_CONST              39 ('spx')
+                   CALL                     1
+    
+      31           BUILD_MAP                5
+                   BUILD_MAP                3
+    
+      29           BUILD_MAP                3
+                   BUILD_LIST               1
+    
+      27           BUILD_MAP                3
+                   RETURN_VALUE
+
+        === CODE value (line 25) args=2 ===
+          --           COPY_FREE_VARS           1
+        
+          25           RESUME                   0
+                       LOAD_DEREF               2 (q)
+                       LOAD_ATTR                1 (get + NULL|self)
+                       LOAD_FAST_BORROW_LOAD_FAST_BORROW 1 (name, default)
+                       BUILD_LIST               1
+                       CALL                     2
+                       LOAD_SMALL_INT           0
+                       BINARY_OP               26 ([])
+                       RETURN_VALUE
+
+    === CODE notify_windows (line 35) args=0 ===
+     35           RESUME                   0
+    
+     36           LOAD_GLOBAL              0 (ctypes)
+                  LOAD_ATTR                2 (windll)
+                  LOAD_ATTR                4 (Wininet)
+                  LOAD_ATTR                7 (InternetSetOptionW + NULL|self)
+                  LOAD_CONST               0 (None)
+                  LOAD_SMALL_INT          39
+                  LOAD_CONST               0 (None)
+                  LOAD_SMALL_INT           0
+                  CALL                     4
+                  POP_TOP
+    
+     37           LOAD_GLOBAL              0 (ctypes)
+                  LOAD_ATTR                2 (windll)
+                  LOAD_ATTR                4 (Wininet)
+                  LOAD_ATTR                7 (InternetSetOptionW + NULL|self)
+                  LOAD_CONST               0 (None)
+                  LOAD_SMALL_INT          37
+                  LOAD_CONST               0 (None)
+                  LOAD_SMALL_INT           0
+                  CALL                     4
+                  POP_TOP
+                  LOAD_CONST               0 (None)
+                  RETURN_VALUE
+
+    === CODE Proxy (line 39) args=0 ===
+      --           MAKE_CELL                0 (__classdict__)
+    
+      39           RESUME                   0
+                   LOAD_NAME                0 (__name__)
+                   STORE_NAME               1 (__module__)
+                   LOAD_CONST               0 ('Proxy')
+                   STORE_NAME               2 (__qualname__)
+                   LOAD_SMALL_INT          39
+                   STORE_NAME               3 (__firstlineno__)
+                   LOAD_LOCALS
+                   STORE_DEREF              0 (__classdict__)
+    
+      40           LOAD_CONST               1 (<code object __init__ at 0x00000000012C5FB0, file "main.py", line 40>)
+                   MAKE_FUNCTION
+                   STORE_NAME               4 (__init__)
+    
+      42           LOAD_CONST               2 (<code object restore at 0x00000000018ADCC0, file "main.py", line 42>)
+                   MAKE_FUNCTION
+                   STORE_NAME               5 (restore)
+    
+      52           LOAD_CONST               3 (<code object enable_system_proxy at 0x00000000018AE3B0, file "main.py", line 52>)
+                   MAKE_FUNCTION
+                   STORE_NAME               6 (enable_system_proxy)
+    
+      65           LOAD_CONST               8 ((True,))
+                   LOAD_CONST               4 (<code object start at 0x00000000018BB7F0, file "main.py", line 65>)
+                   MAKE_FUNCTION
+                   SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                   STORE_NAME               7 (start)
+    
+      90           LOAD_CONST               5 (<code object stop at 0x00000000018BBF10, file "main.py", line 90>)
+                   MAKE_FUNCTION
+                   STORE_NAME               8 (stop)
+                   LOAD_CONST               6 (('backup', 'log', 'process'))
+                   STORE_NAME               9 (__static_attributes__)
+                   LOAD_FAST_BORROW         0 (__classdict__)
+                   STORE_NAME              10 (__classdictcell__)
+                   LOAD_CONST               7 (None)
+                   RETURN_VALUE
+
+        === CODE __init__ (line 40) args=1 ===
+         40           RESUME                   0
+        
+         41           LOAD_CONST               0 (None)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               0 (process)
+                      LOAD_CONST               0 (None)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               1 (log)
+                      LOAD_GLOBAL              4 (DATA)
+                      LOAD_CONST               1 ('proxy-backup.json')
+                      BINARY_OP               11 (/)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               3 (backup)
+                      LOAD_CONST               0 (None)
+                      RETURN_VALUE
+
+        === CODE restore (line 42) args=1 ===
+          42            RESUME                   0
+        
+          43            LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                0 (backup)
+                        LOAD_ATTR                3 (exists + NULL|self)
+                        CALL                     0
+                        TO_BOOL
+                        POP_JUMP_IF_TRUE         3 (to L1)
+                        NOT_TAKEN
+                        LOAD_CONST               0 (None)
+                        RETURN_VALUE
+        
+          44    L1:     LOAD_GLOBAL              4 (json)
+                        LOAD_ATTR                6 (loads)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                0 (backup)
+                        LOAD_ATTR                9 (read_text + NULL|self)
+                        LOAD_CONST               1 ('utf-8')
+                        LOAD_CONST               2 (('encoding',))
+                        CALL_KW                  1
+                        CALL                     1
+                        STORE_FAST               1 (saved)
+        
+          45            LOAD_GLOBAL             10 (winreg)
+                        LOAD_ATTR               12 (OpenKey)
+                        PUSH_NULL
+                        LOAD_GLOBAL             10 (winreg)
+                        LOAD_ATTR               14 (HKEY_CURRENT_USER)
+                        LOAD_GLOBAL             16 (REG_PATH)
+                        LOAD_SMALL_INT           0
+                        LOAD_GLOBAL             10 (winreg)
+                        LOAD_ATTR               18 (KEY_READ)
+                        LOAD_GLOBAL             10 (winreg)
+                        LOAD_ATTR               20 (KEY_SET_VALUE)
+                        BINARY_OP                7 (|)
+                        CALL                     4
+                        COPY                     1
+                        LOAD_SPECIAL             1 (__exit__)
+                        SWAP                     2
+                        SWAP                     3
+                        LOAD_SPECIAL             0 (__enter__)
+                        CALL                     0
+                L2:     STORE_FAST               2 (key)
+        
+          46            LOAD_FAST_BORROW         1 (saved)
+                        LOAD_ATTR               23 (items + NULL|self)
+                        CALL                     0
+                        GET_ITER
+                L3:     FOR_ITER                72 (to L7)
+                        UNPACK_SEQUENCE          2
+                        STORE_FAST_STORE_FAST   52 (name, entry)
+        
+          47            LOAD_FAST_BORROW         4 (entry)
+                        POP_JUMP_IF_NOT_NONE    25 (to L6)
+                        NOT_TAKEN
+        
+          48    L4:     LOAD_GLOBAL             10 (winreg)
+                        LOAD_ATTR               24 (DeleteValue)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW_LOAD_FAST_BORROW 35 (key, name)
+                        CALL                     2
+                        POP_TOP
+                L5:     JUMP_BACKWARD           33 (to L3)
+        
+          50    L6:     LOAD_GLOBAL             10 (winreg)
+                        LOAD_ATTR               28 (SetValueEx)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW_LOAD_FAST_BORROW 35 (key, name)
+                        LOAD_SMALL_INT           0
+                        LOAD_FAST_BORROW         4 (entry)
+                        LOAD_SMALL_INT           1
+                        BINARY_OP               26 ([])
+                        LOAD_FAST_BORROW         4 (entry)
+                        LOAD_SMALL_INT           0
+                        BINARY_OP               26 ([])
+                        CALL                     5
+                        POP_TOP
+                        JUMP_BACKWARD           74 (to L3)
+        
+          46    L7:     END_FOR
+                        POP_ITER
+        
+          45    L8:     LOAD_CONST               0 (None)
+                        LOAD_CONST               0 (None)
+                        LOAD_CONST               0 (None)
+                        CALL                     3
+                        POP_TOP
+        
+          51    L9:     LOAD_GLOBAL             31 (notify_windows + NULL)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                0 (backup)
+                        LOAD_ATTR               33 (unlink + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_CONST               0 (None)
+                        RETURN_VALUE
+        
+          --   L10:     PUSH_EXC_INFO
+        
+          49            LOAD_GLOBAL             26 (FileNotFoundError)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE        5 (to L12)
+                        NOT_TAKEN
+                        POP_TOP
+               L11:     POP_EXCEPT
+                        JUMP_BACKWARD          136 (to L3)
+               L12:     RERAISE                  0
+        
+          --   L13:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        
+          45   L14:     PUSH_EXC_INFO
+                        WITH_EXCEPT_START
+                        TO_BOOL
+                        POP_JUMP_IF_TRUE         2 (to L15)
+                        NOT_TAKEN
+                        RERAISE                  2
+               L15:     POP_TOP
+               L16:     POP_EXCEPT
+                        POP_TOP
+                        POP_TOP
+                        POP_TOP
+                        JUMP_BACKWARD_NO_INTERRUPT 72 (to L9)
+        
+          --   L17:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        ExceptionTable:
+          L2 to L4 -> L14 [2] lasti
+          L4 to L5 -> L10 [3]
+          L5 to L8 -> L14 [2] lasti
+          L10 to L11 -> L13 [4] lasti
+          L11 to L12 -> L14 [2] lasti
+          L12 to L13 -> L13 [4] lasti
+          L13 to L14 -> L14 [2] lasti
+          L14 to L16 -> L17 [4] lasti
+
+        === CODE enable_system_proxy (line 52) args=2 ===
+          52            RESUME                   0
+        
+          53            LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR                2 (OpenKey)
+                        PUSH_NULL
+                        LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR                4 (HKEY_CURRENT_USER)
+                        LOAD_GLOBAL              6 (REG_PATH)
+                        LOAD_SMALL_INT           0
+                        LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR                8 (KEY_READ)
+                        LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               10 (KEY_SET_VALUE)
+                        BINARY_OP                7 (|)
+                        CALL                     4
+                        COPY                     1
+                        LOAD_SPECIAL             1 (__exit__)
+                        SWAP                     2
+                        SWAP                     3
+                        LOAD_SPECIAL             0 (__enter__)
+                        CALL                     0
+                L1:     STORE_FAST               2 (key)
+        
+          54            BUILD_MAP                0
+                        STORE_FAST               3 (saved)
+        
+          55            LOAD_CONST              10 (('ProxyEnable', 'ProxyServer', 'ProxyOverride', 'AutoConfigURL'))
+                        GET_ITER
+                L2:     FOR_ITER                36 (to L5)
+                        STORE_FAST               4 (name)
+        
+          56    L3:     LOAD_GLOBAL             13 (list + NULL)
+                        LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               14 (QueryValueEx)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW_LOAD_FAST_BORROW 36 (key, name)
+                        CALL                     2
+                        CALL                     1
+                        LOAD_FAST_BORROW_LOAD_FAST_BORROW 52 (saved, name)
+                        STORE_SUBSCR
+                L4:     JUMP_BACKWARD           38 (to L2)
+        
+          55    L5:     END_FOR
+                        POP_ITER
+        
+          58            LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               18 (backup)
+                        LOAD_ATTR               21 (write_text + NULL|self)
+                        LOAD_GLOBAL             22 (json)
+                        LOAD_ATTR               24 (dumps)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW         3 (saved)
+                        CALL                     1
+                        LOAD_CONST               6 ('utf-8')
+                        LOAD_CONST               7 (('encoding',))
+                        CALL_KW                  2
+                        POP_TOP
+        
+          59            LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               26 (SetValueEx)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW         2 (key)
+                        LOAD_CONST               2 ('ProxyServer')
+                        LOAD_SMALL_INT           0
+                        LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               28 (REG_SZ)
+                        LOAD_CONST               8 ('127.0.0.1:')
+                        LOAD_FAST_BORROW         1 (port)
+                        FORMAT_SIMPLE
+                        BUILD_STRING             2
+                        CALL                     5
+                        POP_TOP
+        
+          60            LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               26 (SetValueEx)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW         2 (key)
+                        LOAD_CONST               3 ('ProxyOverride')
+                        LOAD_SMALL_INT           0
+                        LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               28 (REG_SZ)
+                        LOAD_CONST               9 ('localhost;127.*;<local>')
+                        CALL                     5
+                        POP_TOP
+        
+          61            LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               26 (SetValueEx)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW         2 (key)
+                        LOAD_CONST               1 ('ProxyEnable')
+                        LOAD_SMALL_INT           0
+                        LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               30 (REG_DWORD)
+                        LOAD_SMALL_INT           1
+                        CALL                     5
+                        POP_TOP
+        
+          62    L6:     LOAD_GLOBAL              0 (winreg)
+                        LOAD_ATTR               32 (DeleteValue)
+                        PUSH_NULL
+                        LOAD_FAST_BORROW         2 (key)
+                        LOAD_CONST               4 ('AutoConfigURL')
+                        CALL                     2
+                        POP_TOP
+        
+          53    L7:     LOAD_CONST               5 (None)
+                        LOAD_CONST               5 (None)
+                        LOAD_CONST               5 (None)
+                        CALL                     3
+                        POP_TOP
+        
+          64    L8:     LOAD_GLOBAL             35 (notify_windows + NULL)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_CONST               5 (None)
+                        RETURN_VALUE
+        
+          --    L9:     PUSH_EXC_INFO
+        
+          57            LOAD_GLOBAL             16 (FileNotFoundError)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE       10 (to L11)
+                        NOT_TAKEN
+                        POP_TOP
+                        LOAD_CONST               5 (None)
+                        LOAD_FAST_LOAD_FAST     52 (saved, name)
+                        STORE_SUBSCR
+               L10:     POP_EXCEPT
+                        EXTENDED_ARG             1
+                        JUMP_BACKWARD          274 (to L2)
+               L11:     RERAISE                  0
+        
+          --   L12:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+               L13:     PUSH_EXC_INFO
+        
+          63            LOAD_GLOBAL             16 (FileNotFoundError)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE        4 (to L15)
+                        NOT_TAKEN
+                        POP_TOP
+               L14:     POP_EXCEPT
+                        JUMP_BACKWARD_NO_INTERRUPT 56 (to L7)
+               L15:     RERAISE                  0
+        
+          --   L16:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        
+          53   L17:     PUSH_EXC_INFO
+                        WITH_EXCEPT_START
+                        TO_BOOL
+                        POP_JUMP_IF_TRUE         2 (to L18)
+                        NOT_TAKEN
+                        RERAISE                  2
+               L18:     POP_TOP
+               L19:     POP_EXCEPT
+                        POP_TOP
+                        POP_TOP
+                        POP_TOP
+                        JUMP_BACKWARD_NO_INTERRUPT 68 (to L8)
+        
+          --   L20:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        ExceptionTable:
+          L1 to L3 -> L17 [2] lasti
+          L3 to L4 -> L9 [3]
+          L4 to L6 -> L17 [2] lasti
+          L6 to L7 -> L13 [2]
+          L9 to L10 -> L12 [4] lasti
+          L10 to L11 -> L17 [2] lasti
+          L11 to L12 -> L12 [4] lasti
+          L12 to L13 -> L17 [2] lasti
+          L13 to L14 -> L16 [3] lasti
+          L14 to L15 -> L17 [2] lasti
+          L15 to L16 -> L16 [3] lasti
+          L16 to L17 -> L17 [2] lasti
+          L17 to L19 -> L20 [4] lasti
+
+        === CODE start (line 65) args=2 ===
+          65            RESUME                   0
+        
+          66            LOAD_GLOBAL              0 (DATA)
+                        LOAD_ATTR                3 (mkdir + NULL|self)
+                        LOAD_CONST               0 (True)
+                        LOAD_CONST               0 (True)
+                        LOAD_CONST               1 (('parents', 'exist_ok'))
+                        CALL_KW                  2
+                        POP_TOP
+        
+          67            LOAD_GLOBAL              4 (socket)
+                        LOAD_ATTR                4 (socket)
+                        PUSH_NULL
+                        CALL                     0
+                        COPY                     1
+                        LOAD_SPECIAL             1 (__exit__)
+                        SWAP                     2
+                        SWAP                     3
+                        LOAD_SPECIAL             0 (__enter__)
+                        CALL                     0
+                L1:     STORE_FAST               2 (s)
+        
+          68            LOAD_FAST_BORROW         2 (s)
+                        LOAD_ATTR                7 (bind + NULL|self)
+                        LOAD_CONST              29 (('127.0.0.1', 0))
+                        CALL                     1
+                        POP_TOP
+                        LOAD_FAST_BORROW         2 (s)
+                        LOAD_ATTR                9 (getsockname + NULL|self)
+                        CALL                     0
+                        LOAD_SMALL_INT           1
+                        BINARY_OP               26 ([])
+                        STORE_FAST               3 (port)
+        
+          67    L2:     LOAD_CONST               3 (None)
+                        LOAD_CONST               3 (None)
+                        LOAD_CONST               3 (None)
+                        CALL                     3
+                        POP_TOP
+        
+          69    L3:     LOAD_GLOBAL             10 (BUNDLE)
+                        LOAD_CONST               4 ('vendor')
+                        BINARY_OP               11 (/)
+                        LOAD_CONST               5 ('xray')
+                        BINARY_OP               11 (/)
+                        LOAD_CONST               6 ('xray.exe')
+                        BINARY_OP               11 (/)
+                        STORE_FAST               4 (executable)
+        
+          70            LOAD_GLOBAL             10 (BUNDLE)
+                        LOAD_CONST               7 ('node.txt')
+                        BINARY_OP               11 (/)
+                        LOAD_ATTR               13 (read_text + NULL|self)
+                        LOAD_CONST               8 ('utf-8')
+                        LOAD_CONST               9 (('encoding',))
+                        CALL_KW                  1
+                        LOAD_ATTR               15 (strip + NULL|self)
+                        CALL                     0
+                        STORE_FAST               5 (link)
+        
+          71            LOAD_GLOBAL             16 (json)
+                        LOAD_ATTR               18 (dumps)
+                        PUSH_NULL
+                        LOAD_GLOBAL             21 (make_config + NULL)
+                        LOAD_FAST_BORROW         5 (link)
+                        LOAD_FAST_CHECK          3 (port)
+                        CALL                     2
+                        CALL                     1
+                        LOAD_ATTR               23 (encode + NULL|self)
+                        LOAD_CONST               8 ('utf-8')
+                        CALL                     1
+                        STORE_FAST               6 (config)
+        
+          72            LOAD_GLOBAL              0 (DATA)
+                        LOAD_CONST              10 ('proxy.log')
+                        BINARY_OP               11 (/)
+                        LOAD_ATTR               25 (open + NULL|self)
+                        LOAD_CONST              11 ('ab')
+                        CALL                     1
+                        LOAD_FAST_BORROW         0 (self)
+                        STORE_ATTR              13 (log)
+        
+          73            NOP
+        
+          74    L4:     LOAD_GLOBAL             28 (subprocess)
+                        LOAD_ATTR               30 (Popen)
+                        PUSH_NULL
+                        LOAD_GLOBAL             33 (str + NULL)
+                        LOAD_FAST_BORROW         4 (executable)
+                        CALL                     1
+                        LOAD_CONST              12 ('run')
+                        LOAD_CONST              13 ('-c')
+                        LOAD_CONST              14 ('stdin:')
+                        BUILD_LIST               4
+                        LOAD_GLOBAL             28 (subprocess)
+                        LOAD_ATTR               34 (PIPE)
+        
+          75            LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               26 (log)
+                        LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               26 (log)
+                        LOAD_GLOBAL             28 (subprocess)
+                        LOAD_ATTR               36 (CREATE_NO_WINDOW)
+        
+          74            LOAD_CONST              15 (('stdin', 'stdout', 'stderr', 'creationflags'))
+                        CALL_KW                  5
+                        LOAD_FAST_BORROW         0 (self)
+                        STORE_ATTR              19 (process)
+        
+          76            LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               38 (process)
+                        LOAD_ATTR               40 (stdin)
+                        LOAD_ATTR               43 (write + NULL|self)
+                        LOAD_FAST_BORROW         6 (config)
+                        CALL                     1
+                        POP_TOP
+                        LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               38 (process)
+                        LOAD_ATTR               40 (stdin)
+                        LOAD_ATTR               45 (close + NULL|self)
+                        CALL                     0
+                        POP_TOP
+        
+          77            LOAD_GLOBAL             47 (range + NULL)
+                        LOAD_SMALL_INT          60
+                        CALL                     1
+                        GET_ITER
+                L5:     FOR_ITER                86 (to L11)
+                        STORE_FAST               7 (_)
+        
+          78            LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               38 (process)
+                        LOAD_ATTR               49 (poll + NULL|self)
+                        CALL                     0
+                        POP_JUMP_IF_NONE        12 (to L6)
+                        NOT_TAKEN
+                        LOAD_GLOBAL             51 (RuntimeError + NULL)
+                        LOAD_CONST              16 ('代理组件启动失败，请查看本地 proxy.log')
+                        CALL                     1
+                        RAISE_VARARGS            1
+        
+          79    L6:     NOP
+        
+          80    L7:     LOAD_GLOBAL              4 (socket)
+                        LOAD_ATTR               52 (create_connection)
+                        PUSH_NULL
+                        LOAD_CONST               2 ('127.0.0.1')
+                        LOAD_FAST_BORROW         3 (port)
+                        BUILD_TUPLE              2
+                        LOAD_CONST              17 (0.2)
+                        LOAD_CONST              18 (('timeout',))
+                        CALL_KW                  2
+                        COPY                     1
+                        LOAD_SPECIAL             1 (__exit__)
+                        SWAP                     2
+                        SWAP                     3
+                        LOAD_SPECIAL             0 (__enter__)
+                        CALL                     0
+                L8:     POP_TOP
+                L9:     LOAD_CONST               3 (None)
+                        LOAD_CONST               3 (None)
+                        LOAD_CONST               3 (None)
+                        CALL                     3
+                        POP_TOP
+               L10:     POP_TOP
+                        JUMP_FORWARD            13 (to L12)
+        
+          77   L11:     END_FOR
+                        POP_ITER
+        
+          82            LOAD_GLOBAL             51 (RuntimeError + NULL)
+                        LOAD_CONST              20 ('等待代理组件启动超时')
+                        CALL                     1
+                        RAISE_VARARGS            1
+        
+          83   L12:     LOAD_CONST              21 ('http://127.0.0.1:')
+                        LOAD_FAST_BORROW         3 (port)
+                        FORMAT_SIMPLE
+                        BUILD_STRING             2
+                        STORE_FAST               8 (endpoint)
+        
+          84            LOAD_GLOBAL             61 (build_opener + NULL)
+                        LOAD_GLOBAL             63 (ProxyHandler + NULL)
+                        LOAD_CONST              22 ('http')
+                        LOAD_FAST_BORROW         8 (endpoint)
+                        LOAD_CONST              23 ('https')
+                        LOAD_FAST_BORROW         8 (endpoint)
+                        BUILD_MAP                2
+                        CALL                     1
+                        CALL                     1
+                        STORE_FAST               9 (opener)
+        
+          85            LOAD_FAST_BORROW         9 (opener)
+                        LOAD_ATTR               25 (open + NULL|self)
+                        LOAD_GLOBAL             65 (Request + NULL)
+                        LOAD_CONST              24 ('https://www.microsoft.com/')
+                        LOAD_CONST              25 ('HEAD')
+                        LOAD_CONST              26 (('method',))
+                        CALL_KW                  2
+                        LOAD_SMALL_INT          20
+                        LOAD_CONST              18 (('timeout',))
+                        CALL_KW                  2
+                        COPY                     1
+                        LOAD_SPECIAL             1 (__exit__)
+                        SWAP                     2
+                        SWAP                     3
+                        LOAD_SPECIAL             0 (__enter__)
+                        CALL                     0
+               L13:     STORE_FAST              10 (r)
+        
+          86            LOAD_FAST_BORROW        10 (r)
+                        LOAD_ATTR               66 (status)
+                        LOAD_CONST              27 (400)
+                        COMPARE_OP             188 (bool(>=))
+                        POP_JUMP_IF_FALSE       12 (to L14)
+                        NOT_TAKEN
+                        LOAD_GLOBAL             51 (RuntimeError + NULL)
+                        LOAD_CONST              28 ('代理网络测试未通过')
+                        CALL                     1
+                        RAISE_VARARGS            1
+               L14:     NOP
+        
+          85   L15:     LOAD_CONST               3 (None)
+                        LOAD_CONST               3 (None)
+                        LOAD_CONST               3 (None)
+                        CALL                     3
+                        POP_TOP
+        
+          87   L16:     LOAD_FAST_BORROW         1 (apply_system)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE       20 (to L20)
+               L17:     NOT_TAKEN
+               L18:     LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               69 (enable_system_proxy + NULL|self)
+                        LOAD_FAST_BORROW         3 (port)
+                        CALL                     1
+                        POP_TOP
+               L19:     LOAD_CONST               3 (None)
+                        RETURN_VALUE
+               L20:     LOAD_CONST               3 (None)
+                        RETURN_VALUE
+        
+          67   L21:     PUSH_EXC_INFO
+                        WITH_EXCEPT_START
+                        TO_BOOL
+                        POP_JUMP_IF_TRUE         2 (to L22)
+                        NOT_TAKEN
+                        RERAISE                  2
+               L22:     POP_TOP
+               L23:     POP_EXCEPT
+                        POP_TOP
+                        POP_TOP
+                        POP_TOP
+                        EXTENDED_ARG             2
+                        JUMP_BACKWARD_NO_INTERRUPT 580 (to L3)
+        
+          --   L24:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        
+          80   L25:     PUSH_EXC_INFO
+                        WITH_EXCEPT_START
+                        TO_BOOL
+                        POP_JUMP_IF_TRUE         2 (to L26)
+                        NOT_TAKEN
+                        RERAISE                  2
+               L26:     POP_TOP
+               L27:     POP_EXCEPT
+                        POP_TOP
+                        POP_TOP
+                        POP_TOP
+               L28:     EXTENDED_ARG             1
+                        JUMP_BACKWARD          273 (to L5)
+        
+          --   L29:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+               L30:     PUSH_EXC_INFO
+        
+          81            LOAD_GLOBAL             54 (OSError)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE       28 (to L32)
+                        NOT_TAKEN
+                        POP_TOP
+                        LOAD_GLOBAL             56 (time)
+                        LOAD_ATTR               58 (sleep)
+                        PUSH_NULL
+                        LOAD_CONST              19 (0.1)
+                        CALL                     1
+                        POP_TOP
+               L31:     POP_EXCEPT
+                        EXTENDED_ARG             1
+                        JUMP_BACKWARD          313 (to L5)
+               L32:     RERAISE                  0
+        
+          --   L33:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        
+          85   L34:     PUSH_EXC_INFO
+                        WITH_EXCEPT_START
+                        TO_BOOL
+                        POP_JUMP_IF_TRUE         2 (to L35)
+                        NOT_TAKEN
+                        RERAISE                  2
+               L35:     POP_TOP
+               L36:     POP_EXCEPT
+                        POP_TOP
+                        POP_TOP
+                        POP_TOP
+                        JUMP_BACKWARD_NO_INTERRUPT 127 (to L16)
+        
+          --   L37:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+               L38:     PUSH_EXC_INFO
+        
+          88            LOAD_GLOBAL             70 (Exception)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE       19 (to L39)
+                        NOT_TAKEN
+                        POP_TOP
+        
+          89            LOAD_FAST                0 (self)
+                        LOAD_ATTR               73 (stop + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        RAISE_VARARGS            0
+        
+          88   L39:     RERAISE                  0
+        
+          --   L40:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        ExceptionTable:
+          L1 to L2 -> L21 [2] lasti
+          L4 to L6 -> L38 [0]
+          L7 to L8 -> L30 [1]
+          L8 to L9 -> L25 [3] lasti
+          L9 to L10 -> L30 [1]
+          L10 to L13 -> L38 [0]
+          L13 to L14 -> L34 [2] lasti
+          L15 to L17 -> L38 [0]
+          L18 to L19 -> L38 [0]
+          L21 to L23 -> L24 [4] lasti
+          L25 to L27 -> L29 [5] lasti
+          L27 to L28 -> L30 [1]
+          L28 to L29 -> L38 [0]
+          L29 to L30 -> L30 [1]
+          L30 to L31 -> L33 [2] lasti
+          L31 to L32 -> L38 [0]
+          L32 to L33 -> L33 [2] lasti
+          L33 to L34 -> L38 [0]
+          L34 to L36 -> L37 [4] lasti
+          L36 to L38 -> L38 [0]
+          L38 to L40 -> L40 [1] lasti
+
+        === CODE stop (line 90) args=1 ===
+          90            RESUME                   0
+        
+          91    L1:     LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                1 (restore + NULL|self)
+                        CALL                     0
+                        POP_TOP
+        
+          93    L2:     LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                2 (process)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE       83 (to L4)
+                        NOT_TAKEN
+                        LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                5 (poll + NULL|self)
+                        CALL                     0
+                        POP_JUMP_IF_NOT_NONE    55 (to L4)
+                        NOT_TAKEN
+        
+          94            LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                7 (terminate + NULL|self)
+                        CALL                     0
+                        POP_TOP
+        
+          95    L3:     LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                9 (wait + NULL|self)
+                        LOAD_SMALL_INT           5
+                        LOAD_CONST               1 (('timeout',))
+                        CALL_KW                  1
+                        POP_TOP
+        
+          97    L4:     LOAD_CONST               0 (None)
+                        LOAD_FAST_BORROW         0 (self)
+                        STORE_ATTR               1 (process)
+        
+          98            LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               16 (log)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE       36 (to L5)
+                        NOT_TAKEN
+                        LOAD_FAST_BORROW         0 (self)
+                        LOAD_ATTR               16 (log)
+                        LOAD_ATTR               19 (close + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_CONST               0 (None)
+                        LOAD_FAST_BORROW         0 (self)
+                        STORE_ATTR               8 (log)
+                        LOAD_CONST               0 (None)
+                        RETURN_VALUE
+                L5:     LOAD_CONST               0 (None)
+                        RETURN_VALUE
+        
+          --    L6:     PUSH_EXC_INFO
+        
+          96            LOAD_GLOBAL             10 (subprocess)
+                        LOAD_ATTR               12 (TimeoutExpired)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE       56 (to L8)
+                        NOT_TAKEN
+                        POP_TOP
+                        LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR               15 (kill + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                9 (wait + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                L7:     POP_EXCEPT
+                        JUMP_BACKWARD_NO_INTERRUPT 137 (to L4)
+                L8:     RERAISE                  0
+        
+          --    L9:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+               L10:     PUSH_EXC_INFO
+        
+          93            LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE      163 (to L17)
+                        NOT_TAKEN
+                        LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                5 (poll + NULL|self)
+                        CALL                     0
+                        POP_JUMP_IF_NOT_NONE   135 (to L17)
+                        NOT_TAKEN
+        
+          94            LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                7 (terminate + NULL|self)
+                        CALL                     0
+                        POP_TOP
+        
+          95   L11:     LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                9 (wait + NULL|self)
+                        LOAD_SMALL_INT           5
+                        LOAD_CONST               1 (('timeout',))
+                        CALL_KW                  1
+                        POP_TOP
+               L12:     JUMP_FORWARD            79 (to L17)
+        
+          --   L13:     PUSH_EXC_INFO
+        
+          96            LOAD_GLOBAL             10 (subprocess)
+                        LOAD_ATTR               12 (TimeoutExpired)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE       56 (to L15)
+                        NOT_TAKEN
+                        POP_TOP
+                        LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR               15 (kill + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_FAST                0 (self)
+                        LOAD_ATTR                2 (process)
+                        LOAD_ATTR                9 (wait + NULL|self)
+                        CALL                     0
+                        POP_TOP
+               L14:     POP_EXCEPT
+                        JUMP_FORWARD             4 (to L17)
+               L15:     RERAISE                  0
+        
+          --   L16:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        
+          97   L17:     LOAD_CONST               0 (None)
+                        LOAD_FAST                0 (self)
+                        STORE_ATTR               1 (process)
+        
+          98            LOAD_FAST                0 (self)
+                        LOAD_ATTR               16 (log)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE       35 (to L20)
+               L18:     NOT_TAKEN
+               L19:     LOAD_FAST                0 (self)
+                        LOAD_ATTR               16 (log)
+                        LOAD_ATTR               19 (close + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_CONST               0 (None)
+                        LOAD_FAST                0 (self)
+                        STORE_ATTR               8 (log)
+                        RERAISE                  0
+               L20:     RERAISE                  0
+        
+          --   L21:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        ExceptionTable:
+          L1 to L2 -> L10 [0]
+          L3 to L4 -> L6 [0]
+          L6 to L7 -> L9 [1] lasti
+          L8 to L9 -> L9 [1] lasti
+          L10 to L11 -> L21 [1] lasti
+          L11 to L12 -> L13 [2]
+          L12 to L13 -> L21 [1] lasti
+          L13 to L14 -> L16 [3] lasti
+          L14 to L15 -> L21 [1] lasti
+          L15 to L16 -> L16 [3] lasti
+          L16 to L18 -> L21 [1] lasti
+          L19 to L21 -> L21 [1] lasti
+
+    === CODE App (line 100) args=0 ===
+      --           MAKE_CELL                0 (__classdict__)
+    
+     100           RESUME                   0
+                   LOAD_NAME                0 (__name__)
+                   STORE_NAME               1 (__module__)
+                   LOAD_CONST               0 ('App')
+                   STORE_NAME               2 (__qualname__)
+                   LOAD_SMALL_INT         100
+                   STORE_NAME               3 (__firstlineno__)
+                   LOAD_LOCALS
+                   STORE_DEREF              0 (__classdict__)
+    
+     101           LOAD_CONST               1 (<code object __init__ at 0x00000000018B7560, file "main.py", line 101>)
+                   MAKE_FUNCTION
+                   STORE_NAME               4 (__init__)
+    
+     133           LOAD_CONST              13 ((None,))
+                   LOAD_CONST               3 (<code object open_key_url at 0x0000000001BD84E0, file "main.py", line 133>)
+                   MAKE_FUNCTION
+                   SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                   STORE_NAME               5 (open_key_url)
+    
+     137           LOAD_CONST               4 (<code object link_press at 0x0000000001474B70, file "main.py", line 137>)
+                   MAKE_FUNCTION
+                   STORE_NAME               6 (link_press)
+    
+     141           LOAD_CONST               5 (<code object link_release at 0x0000000001329B30, file "main.py", line 141>)
+                   MAKE_FUNCTION
+                   STORE_NAME               7 (link_release)
+    
+     144           LOAD_CONST              13 ((None,))
+                   LOAD_CONST               6 (<code object copy_key_url at 0x0000000001BD8670, file "main.py", line 144>)
+                   MAKE_FUNCTION
+                   SET_FUNCTION_ATTRIBUTE   1 (defaults)
+                   STORE_NAME               8 (copy_key_url)
+    
+     147           LOAD_CONST               7 (<code object show_link_menu at 0x00000000012F1C50, file "main.py", line 147>)
+                   MAKE_FUNCTION
+                   STORE_NAME               9 (show_link_menu)
+    
+     151           LOAD_CONST               8 (<code object start at 0x0000000001821C10, file "main.py", line 151>)
+                   MAKE_FUNCTION
+                   STORE_NAME              10 (start)
+    
+     163           LOAD_CONST               9 (<code object poll at 0x00000000018B6CF0, file "main.py", line 163>)
+                   MAKE_FUNCTION
+                   STORE_NAME              11 (poll)
+    
+     189           LOAD_CONST              10 (<code object stop at 0x00000000012CDDF0, file "main.py", line 189>)
+                   MAKE_FUNCTION
+                   STORE_NAME              12 (stop)
+    
+     193           LOAD_CONST              11 (<code object close at 0x00000000012E68B0, file "main.py", line 193>)
+                   MAKE_FUNCTION
+                   STORE_NAME              13 (close)
+                   LOAD_CONST              12 (('active', 'active_key', 'busy', 'checking', 'events', 'key', 'key_link', 'key_url', 'link_menu', 'link_press_x', 'link_press_y', 'next_check', 'proxy', 'root', 'start_button', 'status', 'stop_button'))
+                   STORE_NAME              14 (__static_attributes__)
+                   LOAD_FAST_BORROW         0 (__classdict__)
+                   STORE_NAME              15 (__classdictcell__)
+                   LOAD_CONST               2 (None)
+                   RETURN_VALUE
+
+        === CODE __init__ (line 101) args=2 ===
+        101           RESUME                   0
+        
+        102           LOAD_FAST_BORROW_LOAD_FAST_BORROW 16 (root, self)
+                      STORE_ATTR               0 (root)
+                      LOAD_GLOBAL              3 (Proxy + NULL)
+                      CALL                     0
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               2 (proxy)
+                      LOAD_GLOBAL              6 (queue)
+                      LOAD_ATTR                8 (Queue)
+                      PUSH_NULL
+                      CALL                     0
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               5 (events)
+        
+        103           LOAD_CONST               0 (False)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               6 (busy)
+                      LOAD_CONST               0 (False)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               7 (active)
+                      LOAD_CONST               0 (False)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               8 (checking)
+                      LOAD_SMALL_INT           0
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               9 (next_check)
+        
+        104           LOAD_FAST_BORROW         1 (root)
+                      LOAD_ATTR               21 (title + NULL|self)
+                      LOAD_CONST               1 ('Codex 中文汉化工具')
+                      CALL                     1
+                      POP_TOP
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_ATTR               23 (geometry + NULL|self)
+                      LOAD_CONST               2 ('490x330')
+                      CALL                     1
+                      POP_TOP
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_ATTR               25 (resizable + NULL|self)
+                      LOAD_CONST               0 (False)
+                      LOAD_CONST               0 (False)
+                      CALL                     2
+                      POP_TOP
+        
+        105           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               28 (Label)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_CONST               1 ('Codex 中文汉化工具')
+                      LOAD_CONST              42 (('Microsoft YaHei', 18, 'bold'))
+                      LOAD_CONST               3 (('text', 'font'))
+                      CALL_KW                  3
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      LOAD_SMALL_INT          16
+                      LOAD_CONST               4 (('pady',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        106           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               28 (Label)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_CONST               5 ('请输入管理员发放的密钥')
+                      LOAD_CONST               6 (('text',))
+                      CALL_KW                  2
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      CALL                     0
+                      POP_TOP
+        
+        107           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               32 (Entry)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_SMALL_INT          40
+                      LOAD_CONST               7 ('•')
+                      LOAD_CONST               8 (('width', 'show'))
+                      CALL_KW                  3
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR              17 (key)
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               34 (key)
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      LOAD_SMALL_INT          12
+                      LOAD_CONST               4 (('pady',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        108           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               36 (Button)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_CONST               9 ('开启汉化')
+                      LOAD_SMALL_INT          28
+                      LOAD_SMALL_INT           2
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               38 (start)
+                      LOAD_CONST              10 (('text', 'width', 'height', 'command'))
+                      CALL_KW                  5
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR              20 (start_button)
+        
+        109           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               40 (start_button)
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      CALL                     0
+                      POP_TOP
+        
+        110           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               36 (Button)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_CONST              11 ('关闭')
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               42 (stop)
+                      LOAD_CONST              12 ('disabled')
+                      LOAD_CONST              13 (('text', 'command', 'state'))
+                      CALL_KW                  4
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR              22 (stop_button)
+        
+        111           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               44 (stop_button)
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      LOAD_SMALL_INT          10
+                      LOAD_CONST               4 (('pady',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        112           LOAD_CONST              14 ('https://wzyp.cn/item/y734bo')
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR              23 (key_url)
+        
+        113           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               48 (Frame)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      CALL                     1
+                      STORE_FAST               2 (link_row)
+        
+        114           LOAD_FAST_BORROW         2 (link_row)
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      CALL                     0
+                      POP_TOP
+        
+        115           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               28 (Label)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         2 (link_row)
+                      LOAD_CONST              15 ('获取汉化密钥：')
+                      LOAD_CONST               6 (('text',))
+                      CALL_KW                  2
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      LOAD_CONST              16 ('left')
+                      LOAD_CONST              17 (('side',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        116           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               32 (Entry)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         2 (link_row)
+                      LOAD_GLOBAL             51 (len + NULL)
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               46 (key_url)
+                      CALL                     1
+                      LOAD_SMALL_INT           1
+                      BINARY_OP                0 (+)
+                      LOAD_CONST              18 ('#0563c1')
+        
+        117           LOAD_FAST_BORROW         1 (root)
+                      LOAD_ATTR               53 (cget + NULL|self)
+                      LOAD_CONST              19 ('bg')
+                      CALL                     1
+                      LOAD_CONST              20 ('flat')
+                      LOAD_SMALL_INT           0
+        
+        118           LOAD_CONST              21 ('hand2')
+                      LOAD_CONST              22 (True)
+                      LOAD_CONST              16 ('left')
+        
+        116           LOAD_CONST              23 (('width', 'fg', 'readonlybackground', 'relief', 'bd', 'cursor', 'takefocus', 'justify'))
+                      CALL_KW                  9
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR              27 (key_link)
+        
+        119           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               54 (key_link)
+                      LOAD_ATTR               57 (insert + NULL|self)
+                      LOAD_SMALL_INT           0
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               46 (key_url)
+                      CALL                     2
+                      POP_TOP
+        
+        120           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               54 (key_link)
+                      LOAD_ATTR               59 (config + NULL|self)
+                      LOAD_CONST              24 ('readonly')
+                      LOAD_CONST              25 (('state',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        121           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               54 (key_link)
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      LOAD_CONST              16 ('left')
+                      LOAD_CONST              17 (('side',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        122           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               54 (key_link)
+                      LOAD_ATTR               61 (bind + NULL|self)
+                      LOAD_CONST              26 ('<ButtonPress-1>')
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               62 (link_press)
+                      CALL                     2
+                      POP_TOP
+        
+        123           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               54 (key_link)
+                      LOAD_ATTR               61 (bind + NULL|self)
+                      LOAD_CONST              27 ('<ButtonRelease-1>')
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               64 (link_release)
+                      CALL                     2
+                      POP_TOP
+        
+        124           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               54 (key_link)
+                      LOAD_ATTR               61 (bind + NULL|self)
+                      LOAD_CONST              28 ('<Return>')
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               66 (open_key_url)
+                      CALL                     2
+                      POP_TOP
+        
+        125           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               68 (Menu)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_CONST               0 (False)
+                      LOAD_CONST              29 (('tearoff',))
+                      CALL_KW                  2
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR              35 (link_menu)
+        
+        126           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               70 (link_menu)
+                      LOAD_ATTR               73 (add_command + NULL|self)
+                      LOAD_CONST              30 ('复制链接')
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               74 (copy_key_url)
+                      LOAD_CONST              31 (('label', 'command'))
+                      CALL_KW                  2
+                      POP_TOP
+        
+        127           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               54 (key_link)
+                      LOAD_ATTR               61 (bind + NULL|self)
+                      LOAD_CONST              32 ('<Button-3>')
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               76 (show_link_menu)
+                      CALL                     2
+                      POP_TOP
+        
+        128           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               78 (StringVar)
+                      PUSH_NULL
+                      LOAD_CONST              33 ('')
+                      LOAD_CONST              34 (('value',))
+                      CALL_KW                  1
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR              40 (status)
+        
+        129           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               28 (Label)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW_LOAD_FAST_BORROW 16 (root, self)
+                      LOAD_ATTR               80 (status)
+                      LOAD_CONST              35 (455)
+                      LOAD_CONST              36 (('textvariable', 'wraplength'))
+                      CALL_KW                  3
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      CALL                     0
+                      POP_TOP
+        
+        130           LOAD_GLOBAL             26 (tk)
+                      LOAD_ATTR               28 (Label)
+                      PUSH_NULL
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_CONST              37 ('汉化成功后大退重启Codex生效')
+                      LOAD_CONST              38 ('#666666')
+                      LOAD_CONST              39 (('text', 'fg'))
+                      CALL_KW                  3
+                      LOAD_ATTR               31 (pack + NULL|self)
+                      LOAD_SMALL_INT           8
+                      LOAD_CONST               4 (('pady',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        131           LOAD_FAST_BORROW         1 (root)
+                      LOAD_ATTR               83 (protocol + NULL|self)
+                      LOAD_CONST              40 ('WM_DELETE_WINDOW')
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               84 (close)
+                      CALL                     2
+                      POP_TOP
+        
+        132           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                4 (proxy)
+                      LOAD_ATTR               87 (restore + NULL|self)
+                      CALL                     0
+                      POP_TOP
+                      LOAD_FAST_BORROW         1 (root)
+                      LOAD_ATTR               89 (after + NULL|self)
+                      LOAD_SMALL_INT         200
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               90 (poll)
+                      CALL                     2
+                      POP_TOP
+                      LOAD_CONST              41 (None)
+                      RETURN_VALUE
+
+        === CODE open_key_url (line 133) args=2 ===
+         133           RESUME                   0
+        
+         134   L1:     LOAD_GLOBAL              0 (webbrowser)
+                       LOAD_ATTR                2 (open_new_tab)
+                       PUSH_NULL
+                       LOAD_FAST_BORROW         0 (self)
+                       LOAD_ATTR                4 (key_url)
+                       CALL                     1
+                       POP_TOP
+        
+         136   L2:     LOAD_CONST               2 ('break')
+                       RETURN_VALUE
+        
+          --   L3:     PUSH_EXC_INFO
+        
+         135           LOAD_GLOBAL              6 (Exception)
+                       CHECK_EXC_MATCH
+                       POP_JUMP_IF_FALSE       44 (to L7)
+                       NOT_TAKEN
+                       STORE_FAST               2 (error)
+               L4:     LOAD_GLOBAL              8 (messagebox)
+                       LOAD_ATTR               10 (showerror)
+                       PUSH_NULL
+                       LOAD_CONST               0 ('打开链接失败')
+                       LOAD_GLOBAL             13 (str + NULL)
+                       LOAD_FAST                2 (error)
+                       CALL                     1
+                       CALL                     2
+                       POP_TOP
+               L5:     POP_EXCEPT
+                       LOAD_CONST               1 (None)
+                       STORE_FAST               2 (error)
+                       DELETE_FAST              2 (error)
+        
+         136           LOAD_CONST               2 ('break')
+                       RETURN_VALUE
+        
+          --   L6:     LOAD_CONST               1 (None)
+                       STORE_FAST               2 (error)
+                       DELETE_FAST              2 (error)
+                       RERAISE                  1
+        
+         135   L7:     RERAISE                  0
+        
+          --   L8:     COPY                     3
+                       POP_EXCEPT
+                       RERAISE                  1
+        ExceptionTable:
+          L1 to L2 -> L3 [0]
+          L3 to L4 -> L8 [1] lasti
+          L4 to L5 -> L6 [1] lasti
+          L6 to L8 -> L8 [1] lasti
+
+        === CODE link_press (line 137) args=2 ===
+        137           RESUME                   0
+        
+        138           LOAD_FAST_BORROW         1 (event)
+                      LOAD_ATTR                0 (x)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               1 (link_press_x)
+        
+        139           LOAD_FAST_BORROW         1 (event)
+                      LOAD_ATTR                4 (y)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               3 (link_press_y)
+                      LOAD_CONST               0 (None)
+                      RETURN_VALUE
+
+        === CODE link_release (line 141) args=2 ===
+        141           RESUME                   0
+        
+        142           LOAD_GLOBAL              1 (abs + NULL)
+                      LOAD_FAST_BORROW         1 (event)
+                      LOAD_ATTR                2 (x)
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                4 (link_press_x)
+                      BINARY_OP               10 (-)
+                      CALL                     1
+                      LOAD_SMALL_INT           2
+                      COMPARE_OP              58 (bool(<=))
+                      POP_JUMP_IF_FALSE       65 (to L2)
+                      NOT_TAKEN
+                      LOAD_GLOBAL              1 (abs + NULL)
+                      LOAD_FAST_BORROW         1 (event)
+                      LOAD_ATTR                6 (y)
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                8 (link_press_y)
+                      BINARY_OP               10 (-)
+                      CALL                     1
+                      LOAD_SMALL_INT           2
+                      COMPARE_OP              58 (bool(<=))
+                      POP_JUMP_IF_FALSE       20 (to L1)
+                      NOT_TAKEN
+        
+        143           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               11 (open_key_url + NULL|self)
+                      LOAD_FAST_BORROW         1 (event)
+                      CALL                     1
+                      POP_TOP
+                      LOAD_CONST               1 (None)
+                      RETURN_VALUE
+        
+        142   L1:     LOAD_CONST               1 (None)
+                      RETURN_VALUE
+              L2:     LOAD_CONST               1 (None)
+                      RETURN_VALUE
+
+        === CODE copy_key_url (line 144) args=2 ===
+        144           RESUME                   0
+        
+        145           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                0 (root)
+                      LOAD_ATTR                3 (clipboard_clear + NULL|self)
+                      CALL                     0
+                      POP_TOP
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                0 (root)
+                      LOAD_ATTR                5 (clipboard_append + NULL|self)
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                6 (key_url)
+                      CALL                     1
+                      POP_TOP
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                0 (root)
+                      LOAD_ATTR                9 (update_idletasks + NULL|self)
+                      CALL                     0
+                      POP_TOP
+        
+        146           LOAD_CONST               0 ('break')
+                      RETURN_VALUE
+
+        === CODE show_link_menu (line 147) args=2 ===
+         147           RESUME                   0
+        
+         148           LOAD_FAST_BORROW         0 (self)
+                       LOAD_ATTR                0 (key_link)
+                       LOAD_ATTR                3 (focus_set + NULL|self)
+                       CALL                     0
+                       POP_TOP
+        
+         149   L1:     LOAD_FAST_BORROW         0 (self)
+                       LOAD_ATTR                4 (link_menu)
+                       LOAD_ATTR                7 (tk_popup + NULL|self)
+                       LOAD_FAST_BORROW         1 (event)
+                       LOAD_ATTR                8 (x_root)
+                       LOAD_FAST_BORROW         1 (event)
+                       LOAD_ATTR               10 (y_root)
+                       CALL                     2
+                       POP_TOP
+        
+         150   L2:     LOAD_FAST_BORROW         0 (self)
+                       LOAD_ATTR                4 (link_menu)
+                       LOAD_ATTR               13 (grab_release + NULL|self)
+                       CALL                     0
+                       POP_TOP
+                       LOAD_CONST               0 (None)
+                       RETURN_VALUE
+        
+          --   L3:     PUSH_EXC_INFO
+        
+         150           LOAD_FAST                0 (self)
+                       LOAD_ATTR                4 (link_menu)
+                       LOAD_ATTR               13 (grab_release + NULL|self)
+                       CALL                     0
+                       POP_TOP
+                       RERAISE                  0
+        
+          --   L4:     COPY                     3
+                       POP_EXCEPT
+                       RERAISE                  1
+        ExceptionTable:
+          L1 to L2 -> L3 [0]
+          L3 to L4 -> L4 [1] lasti
+
+        === CODE start (line 151) args=1 ===
+          --           MAKE_CELL                0 (self)
+                       MAKE_CELL                2 (key)
+        
+         151           RESUME                   0
+        
+         152           LOAD_DEREF               0 (self)
+                       LOAD_ATTR                0 (key)
+                       LOAD_ATTR                3 (get + NULL|self)
+                       CALL                     0
+                       LOAD_ATTR                5 (strip + NULL|self)
+                       CALL                     0
+                       STORE_DEREF              2 (key)
+        
+         153           LOAD_DEREF               2 (key)
+                       TO_BOOL
+                       POP_JUMP_IF_TRUE        26 (to L1)
+                       NOT_TAKEN
+                       LOAD_GLOBAL              6 (messagebox)
+                       LOAD_ATTR                8 (showerror)
+                       PUSH_NULL
+                       LOAD_CONST               0 ('请输入密钥')
+                       LOAD_CONST               1 ('请输入管理员发放的密钥。')
+                       CALL                     2
+                       POP_TOP
+                       LOAD_CONST               2 (None)
+                       RETURN_VALUE
+        
+         154   L1:     LOAD_CONST               3 (True)
+                       LOAD_DEREF               0 (self)
+                       STORE_ATTR               5 (busy)
+                       LOAD_DEREF               0 (self)
+                       LOAD_ATTR               12 (start_button)
+                       LOAD_ATTR               15 (config + NULL|self)
+                       LOAD_CONST               4 ('disabled')
+                       LOAD_CONST               5 (('state',))
+                       CALL_KW                  1
+                       POP_TOP
+        
+         155           LOAD_DEREF               0 (self)
+                       LOAD_ATTR               16 (status)
+                       LOAD_ATTR               19 (set + NULL|self)
+                       LOAD_CONST               6 ('正在验证密钥并测试代理，请稍候……')
+                       CALL                     1
+                       POP_TOP
+        
+         156           LOAD_FAST_BORROW         2 (key)
+                       LOAD_FAST_BORROW         0 (self)
+                       BUILD_TUPLE              2
+                       LOAD_CONST               7 (<code object worker at 0x00000000018A4700, file "main.py", line 156>)
+                       MAKE_FUNCTION
+                       SET_FUNCTION_ATTRIBUTE   8 (closure)
+                       STORE_FAST               1 (worker)
+        
+         162           LOAD_GLOBAL             20 (threading)
+                       LOAD_ATTR               22 (Thread)
+                       PUSH_NULL
+                       LOAD_FAST_BORROW         1 (worker)
+                       LOAD_CONST               3 (True)
+                       LOAD_CONST               8 (('target', 'daemon'))
+                       CALL_KW                  2
+                       LOAD_ATTR               25 (start + NULL|self)
+                       CALL                     0
+                       POP_TOP
+                       LOAD_CONST               2 (None)
+                       RETURN_VALUE
+
+            === CODE worker (line 156) args=0 ===
+              --           COPY_FREE_VARS           2
+            
+             156           RESUME                   0
+            
+             157           NOP
+            
+             158   L1:     LOAD_GLOBAL              1 (get_key_info + NULL)
+                           LOAD_DEREF               2 (key)
+                           CALL                     1
+                           STORE_FAST               0 (info)
+            
+             159           LOAD_FAST_BORROW         0 (info)
+                           LOAD_ATTR                3 (get + NULL|self)
+                           LOAD_CONST               0 ('ok')
+                           CALL                     1
+                           LOAD_CONST               1 (True)
+                           IS_OP                    1 (is not)
+                           POP_JUMP_IF_FALSE       12 (to L2)
+                           NOT_TAKEN
+                           LOAD_GLOBAL              5 (RuntimeError + NULL)
+                           LOAD_CONST               2 ('密钥无效或已过期，请联系管理员。')
+                           CALL                     1
+                           RAISE_VARARGS            1
+            
+             160   L2:     LOAD_DEREF               3 (self)
+                           LOAD_ATTR                6 (proxy)
+                           LOAD_ATTR                9 (start + NULL|self)
+                           CALL                     0
+                           POP_TOP
+                           LOAD_DEREF               3 (self)
+                           LOAD_ATTR               10 (events)
+                           LOAD_ATTR               13 (put + NULL|self)
+                           LOAD_CONST               3 ('started')
+                           LOAD_DEREF               2 (key)
+                           LOAD_FAST_BORROW         0 (info)
+                           BUILD_TUPLE              2
+                           BUILD_TUPLE              2
+                           CALL                     1
+                           POP_TOP
+                   L3:     LOAD_CONST               5 (None)
+                           RETURN_VALUE
+            
+              --   L4:     PUSH_EXC_INFO
+            
+             161           LOAD_GLOBAL             14 (Exception)
+                           CHECK_EXC_MATCH
+                           POP_JUMP_IF_FALSE       50 (to L8)
+                           NOT_TAKEN
+                           STORE_FAST               1 (e)
+                   L5:     LOAD_DEREF               3 (self)
+                           LOAD_ATTR               10 (events)
+                           LOAD_ATTR               13 (put + NULL|self)
+                           LOAD_CONST               4 ('error')
+                           LOAD_GLOBAL             17 (str + NULL)
+                           LOAD_FAST                1 (e)
+                           CALL                     1
+                           BUILD_TUPLE              2
+                           CALL                     1
+                           POP_TOP
+                   L6:     POP_EXCEPT
+                           LOAD_CONST               5 (None)
+                           STORE_FAST               1 (e)
+                           DELETE_FAST              1 (e)
+                           LOAD_CONST               5 (None)
+                           RETURN_VALUE
+            
+              --   L7:     LOAD_CONST               5 (None)
+                           STORE_FAST               1 (e)
+                           DELETE_FAST              1 (e)
+                           RERAISE                  1
+            
+             161   L8:     RERAISE                  0
+            
+              --   L9:     COPY                     3
+                           POP_EXCEPT
+                           RERAISE                  1
+            ExceptionTable:
+              L1 to L3 -> L4 [0]
+              L4 to L5 -> L9 [1] lasti
+              L5 to L6 -> L7 [1] lasti
+              L7 to L9 -> L9 [1] lasti
+
+        === CODE poll (line 163) args=1 ===
+          --            MAKE_CELL                0 (self)
+                        MAKE_CELL                5 (key)
+        
+         163            RESUME                   0
+        
+         164            NOP
+        
+         165    L1:     NOP
+        
+         166            LOAD_DEREF               0 (self)
+                        LOAD_ATTR                0 (events)
+                        LOAD_ATTR                3 (get_nowait + NULL|self)
+                        CALL                     0
+                        UNPACK_SEQUENCE          2
+                        STORE_FAST_STORE_FAST   18 (kind, value)
+        
+         167            LOAD_FAST_BORROW         1 (kind)
+                        LOAD_CONST               1 ('started')
+                        COMPARE_OP              88 (bool(==))
+                        POP_JUMP_IF_FALSE      138 (to L2)
+                        NOT_TAKEN
+        
+         168            LOAD_CONST               2 (False)
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR               2 (busy)
+                        LOAD_CONST               0 (True)
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR               3 (active)
+                        LOAD_FAST_BORROW         2 (value)
+                        UNPACK_SEQUENCE          2
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR               4 (active_key)
+                        STORE_FAST               3 (info)
+        
+         169            LOAD_GLOBAL             10 (time)
+                        LOAD_ATTR               12 (monotonic)
+                        PUSH_NULL
+                        CALL                     0
+                        LOAD_SMALL_INT          60
+                        BINARY_OP                0 (+)
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR               7 (next_check)
+                        LOAD_DEREF               0 (self)
+                        LOAD_ATTR               16 (stop_button)
+                        LOAD_ATTR               19 (config + NULL|self)
+                        LOAD_CONST               3 ('normal')
+                        LOAD_CONST               4 (('state',))
+                        CALL_KW                  1
+                        POP_TOP
+        
+         170            LOAD_DEREF               0 (self)
+                        LOAD_ATTR               20 (status)
+                        LOAD_ATTR               23 (set + NULL|self)
+                        LOAD_CONST               5 ('代理已连通。请保持本工具运行，并手动重启 Codex。')
+                        CALL                     1
+                        POP_TOP
+        
+         171            LOAD_GLOBAL             24 (messagebox)
+                        LOAD_ATTR               26 (showinfo)
+                        PUSH_NULL
+                        LOAD_CONST               6 ('代理已启用')
+                        LOAD_CONST               7 ('汉化成功，请重启Codex生效\n\n代理连接测试已通过；实际中文界面请重启后确认。\n请保持本工具运行。')
+                        CALL                     2
+                        POP_TOP
+                        JUMP_BACKWARD          173 (to L1)
+        
+         172    L2:     LOAD_FAST_BORROW         1 (kind)
+                        LOAD_CONST               8 ('checked')
+                        COMPARE_OP              88 (bool(==))
+                        POP_JUMP_IF_FALSE      115 (to L9)
+                        NOT_TAKEN
+        
+         173            LOAD_CONST               2 (False)
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR              14 (checking)
+                        LOAD_GLOBAL             10 (time)
+                        LOAD_ATTR               12 (monotonic)
+                        PUSH_NULL
+                        CALL                     0
+                        LOAD_SMALL_INT          60
+                        BINARY_OP                0 (+)
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR               7 (next_check)
+        
+         174            LOAD_FAST_BORROW         2 (value)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE       64 (to L8)
+                L3:     NOT_TAKEN
+                L4:     LOAD_DEREF               0 (self)
+                        LOAD_ATTR                6 (active)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE       43 (to L7)
+                L5:     NOT_TAKEN
+                L6:     LOAD_DEREF               0 (self)
+                        LOAD_ATTR               31 (stop + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_GLOBAL             24 (messagebox)
+                        LOAD_ATTR               32 (showerror)
+                        PUSH_NULL
+                        LOAD_CONST               9 ('代理已停止')
+                        LOAD_FAST_BORROW         2 (value)
+                        CALL                     2
+                        POP_TOP
+                        EXTENDED_ARG             1
+                        JUMP_BACKWARD          288 (to L1)
+                L7:     EXTENDED_ARG             1
+                        JUMP_BACKWARD          291 (to L1)
+                L8:     EXTENDED_ARG             1
+                        JUMP_BACKWARD          294 (to L1)
+        
+         176    L9:     LOAD_CONST               2 (False)
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR               2 (busy)
+                        LOAD_DEREF               0 (self)
+                        LOAD_ATTR               34 (start_button)
+                        LOAD_ATTR               19 (config + NULL|self)
+                        LOAD_CONST               3 ('normal')
+                        LOAD_CONST               4 (('state',))
+                        CALL_KW                  1
+                        POP_TOP
+        
+         177            LOAD_DEREF               0 (self)
+                        LOAD_ATTR               20 (status)
+                        LOAD_ATTR               23 (set + NULL|self)
+                        LOAD_CONST              10 ('启用失败，未保持代理。')
+                        CALL                     1
+                        POP_TOP
+                        LOAD_GLOBAL             24 (messagebox)
+                        LOAD_ATTR               32 (showerror)
+                        PUSH_NULL
+                        LOAD_CONST              11 ('启用失败')
+                        LOAD_FAST_BORROW         2 (value)
+                        CALL                     2
+                        POP_TOP
+                        EXTENDED_ARG             1
+                        JUMP_BACKWARD          382 (to L1)
+        
+          --   L10:     PUSH_EXC_INFO
+        
+         178            LOAD_GLOBAL             36 (queue)
+                        LOAD_ATTR               38 (Empty)
+                        CHECK_EXC_MATCH
+                        POP_JUMP_IF_FALSE        4 (to L12)
+                        NOT_TAKEN
+                        POP_TOP
+               L11:     POP_EXCEPT
+                        JUMP_FORWARD             4 (to L14)
+               L12:     RERAISE                  0
+        
+          --   L13:     COPY                     3
+                        POP_EXCEPT
+                        RERAISE                  1
+        
+         179   L14:     LOAD_DEREF               0 (self)
+                        LOAD_ATTR                6 (active)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE       78 (to L15)
+                        NOT_TAKEN
+                        LOAD_DEREF               0 (self)
+                        LOAD_ATTR               40 (proxy)
+                        LOAD_ATTR               42 (process)
+                        LOAD_ATTR               45 (poll + NULL|self)
+                        CALL                     0
+                        POP_JUMP_IF_NONE        40 (to L15)
+                        NOT_TAKEN
+        
+         180            LOAD_DEREF               0 (self)
+                        LOAD_ATTR               31 (stop + NULL|self)
+                        CALL                     0
+                        POP_TOP
+                        LOAD_GLOBAL             24 (messagebox)
+                        LOAD_ATTR               32 (showerror)
+                        PUSH_NULL
+                        LOAD_CONST              13 ('代理中断')
+                        LOAD_CONST              14 ('代理组件已退出，已恢复原代理设置。')
+                        CALL                     2
+                        POP_TOP
+        
+         181   L15:     LOAD_DEREF               0 (self)
+                        LOAD_ATTR                6 (active)
+                        TO_BOOL
+                        POP_JUMP_IF_FALSE      119 (to L16)
+                        NOT_TAKEN
+                        LOAD_DEREF               0 (self)
+                        LOAD_ATTR               28 (checking)
+                        TO_BOOL
+                        POP_JUMP_IF_TRUE       101 (to L16)
+                        NOT_TAKEN
+                        LOAD_GLOBAL             10 (time)
+                        LOAD_ATTR               12 (monotonic)
+                        PUSH_NULL
+                        CALL                     0
+                        LOAD_DEREF               0 (self)
+                        LOAD_ATTR               14 (next_check)
+                        COMPARE_OP             188 (bool(>=))
+                        POP_JUMP_IF_FALSE       65 (to L16)
+                        NOT_TAKEN
+        
+         182            LOAD_CONST               0 (True)
+                        LOAD_DEREF               0 (self)
+                        STORE_ATTR              14 (checking)
+                        LOAD_DEREF               0 (self)
+                        LOAD_ATTR                8 (active_key)
+                        STORE_DEREF              5 (key)
+        
+         183            LOAD_FAST                5 (key)
+                        LOAD_FAST                0 (self)
+                        BUILD_TUPLE              2
+                        LOAD_CONST              15 (<code object check at 0x0000000001323840, file "main.py", line 183>)
+                        MAKE_FUNCTION
+                        SET_FUNCTION_ATTRIBUTE   8 (closure)
+                        STORE_FAST               4 (check)
+        
+         187            LOAD_GLOBAL             46 (threading)
+                        LOAD_ATTR               48 (Thread)
+                        PUSH_NULL
+                        LOAD_FAST                4 (check)
+                        LOAD_CONST               0 (True)
+                        LOAD_CONST              16 (('target', 'daemon'))
+                        CALL_KW                  2
+                        LOAD_ATTR               51 (start + NULL|self)
+                        CALL                     0
+                        POP_TOP
+        
+         188   L16:     LOAD_DEREF               0 (self)
+                        LOAD_ATTR               52 (root)
+                        LOAD_ATTR               55 (after + NULL|self)
+                        LOAD_SMALL_INT         200
+                        LOAD_DEREF               0 (self)
+                        LOAD_ATTR               44 (poll)
+                        CALL                     2
+                        POP_TOP
+                        LOAD_CONST              12 (None)
+                        RETURN_VALUE
+        ExceptionTable:
+          L1 to L3 -> L10 [0]
+          L4 to L5 -> L10 [0]
+          L6 to L10 -> L10 [0]
+          L10 to L11 -> L13 [1] lasti
+          L12 to L13 -> L13 [1] lasti
+
+            === CODE check (line 183) args=0 ===
+              --           COPY_FREE_VARS           2
+            
+             183           RESUME                   0
+            
+             184   L1:     LOAD_GLOBAL              1 (verify_key + NULL)
+                           LOAD_DEREF               1 (key)
+                           CALL                     1
+                           TO_BOOL
+                           POP_JUMP_IF_FALSE        3 (to L2)
+                           NOT_TAKEN
+                           LOAD_CONST               0 ('')
+                           JUMP_FORWARD             1 (to L3)
+                   L2:     LOAD_CONST               1 ('密钥已失效，请联系管理员。')
+                   L3:     STORE_FAST               0 (error)
+            
+             186   L4:     LOAD_DEREF               2 (self)
+                           LOAD_ATTR                4 (events)
+                           LOAD_ATTR                7 (put + NULL|self)
+                           LOAD_CONST               3 ('checked')
+                           LOAD_FAST_BORROW         0 (error)
+                           BUILD_TUPLE              2
+                           CALL                     1
+                           POP_TOP
+                           LOAD_CONST               4 (None)
+                           RETURN_VALUE
+            
+              --   L5:     PUSH_EXC_INFO
+            
+             185           LOAD_GLOBAL              2 (Exception)
+                           CHECK_EXC_MATCH
+                           POP_JUMP_IF_FALSE        6 (to L7)
+                           NOT_TAKEN
+                           POP_TOP
+                           LOAD_CONST               2 ('无法续验密钥，请检查网络后重新启用。')
+                           STORE_FAST               0 (error)
+                   L6:     POP_EXCEPT
+                           JUMP_BACKWARD_NO_INTERRUPT 46 (to L4)
+                   L7:     RERAISE                  0
+            
+              --   L8:     COPY                     3
+                           POP_EXCEPT
+                           RERAISE                  1
+            ExceptionTable:
+              L1 to L4 -> L5 [0]
+              L5 to L6 -> L8 [1] lasti
+              L7 to L8 -> L8 [1] lasti
+
+        === CODE stop (line 189) args=1 ===
+        189           RESUME                   0
+        
+        190           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                0 (proxy)
+                      LOAD_ATTR                3 (stop + NULL|self)
+                      CALL                     0
+                      POP_TOP
+                      LOAD_CONST               0 (False)
+                      LOAD_FAST_BORROW         0 (self)
+                      STORE_ATTR               2 (active)
+        
+        191           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                6 (start_button)
+                      LOAD_ATTR                9 (config + NULL|self)
+                      LOAD_CONST               1 ('normal')
+                      LOAD_CONST               2 (('state',))
+                      CALL_KW                  1
+                      POP_TOP
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               10 (stop_button)
+                      LOAD_ATTR                9 (config + NULL|self)
+                      LOAD_CONST               3 ('disabled')
+                      LOAD_CONST               2 (('state',))
+                      CALL_KW                  1
+                      POP_TOP
+        
+        192           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR               12 (status)
+                      LOAD_ATTR               15 (set + NULL|self)
+                      LOAD_CONST               4 ('代理已停止，原设置已恢复。')
+                      CALL                     1
+                      POP_TOP
+                      LOAD_CONST               5 (None)
+                      RETURN_VALUE
+
+        === CODE close (line 193) args=1 ===
+        193           RESUME                   0
+        
+        194           LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                0 (busy)
+                      TO_BOOL
+                      POP_JUMP_IF_FALSE       26 (to L1)
+                      NOT_TAKEN
+                      LOAD_GLOBAL              2 (messagebox)
+                      LOAD_ATTR                4 (showinfo)
+                      PUSH_NULL
+                      LOAD_CONST               0 ('请稍候')
+                      LOAD_CONST               1 ('正在测试代理，请等待完成后关闭。')
+                      CALL                     2
+                      POP_TOP
+                      LOAD_CONST               2 (None)
+                      RETURN_VALUE
+        
+        195   L1:     LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                7 (stop + NULL|self)
+                      CALL                     0
+                      POP_TOP
+                      LOAD_FAST_BORROW         0 (self)
+                      LOAD_ATTR                8 (root)
+                      LOAD_ATTR               11 (destroy + NULL|self)
+                      CALL                     0
+                      POP_TOP
+                      LOAD_CONST               2 (None)
+                      RETURN_VALUE
+

@@ -1,0 +1,69 @@
+from __future__ import annotations
+import os
+from typing import Protocol
+from typing import (Any, Dict, Iterator, List, Optional, TypeVar, Union, overload)
+_T = TypeVar('_T')
+
+class PackageMetadata(Protocol):
+    def __len__(self) -> 'int':
+        pass
+
+    def __contains__(self, item: 'str') -> 'bool':
+        pass
+
+    def __getitem__(self, key: 'str') -> 'str':
+        pass
+
+    def __iter__(self) -> 'Iterator[str]':
+        pass
+
+    @overload
+    def get(self, name: 'str', failobj: 'None'=None) -> 'Optional[str]':
+        pass
+
+    @overload
+    def get(self, name: 'str', failobj: '_T') -> 'Union[str, _T]':
+        pass
+
+    @overload
+    def get_all(self, name: 'str', failobj: 'None'=None) -> 'Optional[List[Any]]':
+        pass
+
+    @overload
+    def get_all(self, name: 'str', failobj: '_T') -> 'Union[List[Any], _T]':
+        '''
+        Return all values associated with a possibly multi-valued key.
+        '''
+
+    @property
+    def json(self) -> 'Dict[str, Union[str, List[str]]]':
+        '''
+        A JSON-compatible form of the metadata.
+        '''
+
+
+class SimplePath(Protocol):
+    '''
+    A minimal subset of pathlib.Path required by Distribution.
+    '''
+
+    def joinpath(self, other: 'Union[str, os.PathLike[str]]') -> 'SimplePath':
+        pass
+
+    def __truediv__(self, other: 'Union[str, os.PathLike[str]]') -> 'SimplePath':
+        pass
+
+    @property
+    def parent(self) -> 'SimplePath':
+        pass
+
+    def read_text(self, encoding=None) -> 'str':
+        pass
+
+    def read_bytes(self) -> 'bytes':
+        pass
+
+    def exists(self) -> 'bool':
+        pass
+
+

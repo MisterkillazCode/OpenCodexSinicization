@@ -1,0 +1,5 @@
+AUTHORITATIVE <module>.App.poll: '汉化成功，请重启Codex生效\n\n代理连接测试已通过；实际中文界面请重启后确认。\n请保持本工具运行。'
+PYCDC line 183: "        tk.Label(root, text='汉化成功后大退重启Codex生效', fg='#666666').pack(pady=8)"
+PYCDC line 247: "                    messagebox.showinfo('代理已启用', '汉化成功，请重启Codex生效\\n\\n代理连接测试已通过；实际中文界面请重启后确认。\\n请保持本工具运行。')"
+PYCDC line 288: "            messagebox.showinfo('请稍候', '正在测试代理，请等待完成后关闭。')"
+PYCDC line 302: "        messagebox.showinfo('工具已运行', '请使用已经打开的代理工具。')"

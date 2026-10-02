@@ -1,0 +1,4 @@
+<module>                         | Software\Microsoft\Windows\CurrentVersion\Internet Settings
+<module>                         | Local\CodexChineseProxy
+<module>.Proxy.start             | 代理网络测试未通过
+<module>.App.poll                | 汉化成功，请重启Codex生效\n\n代理连接测试已通过；实际中文界面请重启后确认。\n请保持本工具运行。

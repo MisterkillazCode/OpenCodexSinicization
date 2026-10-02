@@ -1,0 +1,16 @@
+PYZ\annotationlib.py : Unsupported
+PYZ\ast.py : Unsupported
+PYZ\compression\_common\_streams.py : Unsupported
+PYZ\http\__init__.py : Unsupported
+PYZ\logging\__init__.py : ERROR:
+PYZ\pathlib\__init__.py : /*bad-local-0*/
+PYZ\pathlib\__init__.py : Unsupported
+PYZ\pathlib\_os.py : /*bad-local-0*/
+PYZ\socket.py : Unsupported
+PYZ\subprocess.py : /*bad-local-0*/
+PYZ\subprocess.py : Unsupported
+PYZ\tarfile.py : Unsupported
+PYZ\urllib\request.py : Unsupported
+PYZ\zipfile\__init__.py : Unsupported
+pyimod01_archive.py : ERROR:
+pyimod02_importers.py : /*bad-local-0*/
